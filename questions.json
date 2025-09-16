@@ -479,6 +479,786 @@
         { "id": 4, "choicetext": "WBS dictionary", "iscorrect": false }
       ],
       "Explenation": "Quantitative risk analysis, such as with Monte Carlo simulation, quantifies risk exposure. (PMBOK Guide, Section 11.4)."
+    },
+    {
+      "qid": 41,
+      "difficulty": "easy",
+      "QuestionText": "Which document authorizes the start of a project?",
+      "Choices": [
+        { "id": 1, "choicetext": "Project Charter", "iscorrect": true },
+        { "id": 2, "choicetext": "Scope Statement", "iscorrect": false },
+        { "id": 3, "choicetext": "Cost Baseline", "iscorrect": false },
+        { "id": 4, "choicetext": "Schedule Management Plan", "iscorrect": false }
+      ],
+      "Explenation": "The Project Charter formally authorizes the project and gives the project manager authority to apply resources (PMBOK Guide, Section 4.1)."
+    },
+    {
+      "qid": 42,
+      "difficulty": "easy",
+      "QuestionText": "What is a project?",
+      "Choices": [
+        { "id": 1, "choicetext": "A temporary endeavor undertaken to create a unique product, service, or result", "iscorrect": true },
+        { "id": 2, "choicetext": "Routine operational work", "iscorrect": false },
+        { "id": 3, "choicetext": "A permanent group within an organization", "iscorrect": false },
+        { "id": 4, "choicetext": "A process improvement", "iscorrect": false }
+      ],
+      "Explenation": "A project is temporary and produces a unique product, service, or result (PMBOK Guide, Section 1.2)."
+    },
+    {
+      "qid": 43,
+      "difficulty": "easy",
+      "QuestionText": "Who is the person responsible for achieving project objectives?",
+      "Choices": [
+        { "id": 1, "choicetext": "Project Manager", "iscorrect": true },
+        { "id": 2, "choicetext": "Stakeholder", "iscorrect": false },
+        { "id": 3, "choicetext": "Sponsor", "iscorrect": false },
+        { "id": 4, "choicetext": "Functional Manager", "iscorrect": false }
+      ],
+      "Explenation": "The Project Manager leads the project and is responsible for its success (PMBOK Guide, Section 3.2)."
+    },
+    {
+      "qid": 44,
+      "difficulty": "easy",
+      "QuestionText": "What does WBS stand for?",
+      "Choices": [
+        { "id": 1, "choicetext": "Work Breakdown Structure", "iscorrect": true },
+        { "id": 2, "choicetext": "Work Business Summary", "iscorrect": false },
+        { "id": 3, "choicetext": "Work Budget Schedule", "iscorrect": false },
+        { "id": 4, "choicetext": "Work Based Solution", "iscorrect": false }
+      ],
+      "Explenation": "The Work Breakdown Structure is a hierarchical decomposition of project work (PMBOK Guide, Section 5.4)."
+    },
+    {
+      "qid": 45,
+      "difficulty": "easy",
+      "QuestionText": "Which is a process group in project management?",
+      "Choices": [
+        { "id": 1, "choicetext": "Executing", "iscorrect": true },
+        { "id": 2, "choicetext": "Budgeting", "iscorrect": false },
+        { "id": 3, "choicetext": "Project Closing", "iscorrect": false },
+        { "id": 4, "choicetext": "Risk Monitoring", "iscorrect": false }
+      ],
+      "Explenation": "The five project management process groups are Initiating, Planning, Executing, Monitoring and Controlling, and Closing (PMBOK Guide, Introduction)."
+    },
+    {
+      "qid": 46,
+      "difficulty": "easy",
+      "QuestionText": "What is the purpose of a milestone in project scheduling?",
+      "Choices": [
+        { "id": 1, "choicetext": "Mark significant points or events in the project", "iscorrect": true },
+        { "id": 2, "choicetext": "Indicate risks in a project", "iscorrect": false },
+        { "id": 3, "choicetext": "Track project costs", "iscorrect": false },
+        { "id": 4, "choicetext": "Assess stakeholder engagement", "iscorrect": false }
+      ],
+      "Explenation": "Milestones represent key achievements or points in time, usually with zero duration (PMBOK Guide, Section 6.2)."
+    },
+    {
+      "qid": 47,
+      "difficulty": "easy",
+      "QuestionText": "What does a risk register contain?",
+      "Choices": [
+        { "id": 1, "choicetext": "Identified risks and planned responses", "iscorrect": true },
+        { "id": 2, "choicetext": "Project schedule", "iscorrect": false },
+        { "id": 3, "choicetext": "Cost forecasts", "iscorrect": false },
+        { "id": 4, "choicetext": "Work package descriptions", "iscorrect": false }
+      ],
+      "Explenation": "A risk register documents all identified risks and associated risk management plans (PMBOK Guide, Section 11.2)."
+    },
+    {
+      "qid": 48,
+      "difficulty": "easy",
+      "QuestionText": "Which of these is NOT a project constraint?",
+      "Choices": [
+        { "id": 1, "choicetext": "Temperature settings in office rooms", "iscorrect": true },
+        { "id": 2, "choicetext": "Scope", "iscorrect": false },
+        { "id": 3, "choicetext": "Time", "iscorrect": false },
+        { "id": 4, "choicetext": "Cost", "iscorrect": false }
+      ],
+      "Explenation": "Temperature settings are not commonly considered project constraints, while scope, time, and cost are standard constraints (PMBOK Guide, Section 1.7)."
+    },
+    {
+      "qid": 49,
+      "difficulty": "easy",
+      "QuestionText": "What is the primary output of the Develop Project Charter process?",
+      "Choices": [
+        { "id": 1, "choicetext": "Project Charter", "iscorrect": true },
+        { "id": 2, "choicetext": "Stakeholder Register", "iscorrect": false },
+        { "id": 3, "choicetext": "Scope Statement", "iscorrect": false },
+        { "id": 4, "choicetext": "Change Request", "iscorrect": false }
+      ],
+      "Explenation": "The main output of Develop Project Charter is the Project Charter, which formally initiates the project (PMBOK Guide, Section 4.1)."
+    },
+    {
+      "qid": 50,
+      "difficulty": "easy",
+      "QuestionText": "What is the main purpose of the Work Breakdown Structure (WBS)?",
+      "Choices": [
+        { "id": 1, "choicetext": "To organize and define the total project scope", "iscorrect": true },
+        { "id": 2, "choicetext": "To assign team members", "iscorrect": false },
+        { "id": 3, "choicetext": "To control project costs", "iscorrect": false },
+        { "id": 4, "choicetext": "To develop the project schedule", "iscorrect": false }
+      ],
+      "Explenation": "The WBS decomposes the total scope into manageable work components (PMBOK Guide, Section 5.4)."
+    },
+    {
+      "qid": 51,
+      "difficulty": "easy",
+      "QuestionText": "Who approves the project charter?",
+      "Choices": [
+        { "id": 1, "choicetext": "Project Sponsor", "iscorrect": true },
+        { "id": 2, "choicetext": "Project Manager", "iscorrect": false },
+        { "id": 3, "choicetext": "Project Team", "iscorrect": false },
+        { "id": 4, "choicetext": "Customer", "iscorrect": false }
+      ],
+      "Explenation": "The project sponsor or initiator formally approves the Project Charter (PMBOK Guide, Section 4.1)."
+    },
+    {
+      "qid": 52,
+      "difficulty": "easy",
+      "QuestionText": "Which process group includes monitoring project deliverables and performance?",
+      "Choices": [
+        { "id": 1, "choicetext": "Monitoring and Controlling", "iscorrect": true },
+        { "id": 2, "choicetext": "Planning", "iscorrect": false },
+        { "id": 3, "choicetext": "Executing", "iscorrect": false },
+        { "id": 4, "choicetext": "Closing", "iscorrect": false }
+      ],
+      "Explenation": "Monitoring and Controlling involves tracking project performance and verifying deliverables (PMBOK Guide, Section 3.5)."
+    },
+    {
+      "qid": 53,
+      "difficulty": "easy",
+      "QuestionText": "What is a stakeholder?",
+      "Choices": [
+        { "id": 1, "choicetext": "A person or organization that may affect or be affected by a project", "iscorrect": true },
+        { "id": 2, "choicetext": "Only the project sponsor", "iscorrect": false },
+        { "id": 3, "choicetext": "Only the customer", "iscorrect": false },
+        { "id": 4, "choicetext": "Only team members", "iscorrect": false }
+      ],
+      "Explenation": "Stakeholders include anyone who can influence or is influenced by the project (PMBOK Guide, Section 13.1)."
+    },
+    {
+      "qid": 54,
+      "difficulty": "easy",
+      "QuestionText": "Which project document contains detailed descriptions of each work package in the WBS?",
+      "Choices": [
+        { "id": 1, "choicetext": "WBS Dictionary", "iscorrect": true },
+        { "id": 2, "choicetext": "Project Charter", "iscorrect": false },
+        { "id": 3, "choicetext": "Risk Register", "iscorrect": false },
+        { "id": 4, "choicetext": "Issue Log", "iscorrect": false }
+      ],
+      "Explenation": "The WBS Dictionary provides detailed information about each WBS component (PMBOK Guide, Section 5.4)."
+    },
+    {
+      "qid": 55,
+      "difficulty": "easy",
+      "QuestionText": "Which knowledge area is primarily concerned with completing the project on time?",
+      "Choices": [
+        { "id": 1, "choicetext": "Project Schedule Management", "iscorrect": true },
+        { "id": 2, "choicetext": "Project Cost Management", "iscorrect": false },
+        { "id": 3, "choicetext": "Project Integration Management", "iscorrect": false },
+        { "id": 4, "choicetext": "Project Procurement Management", "iscorrect": false }
+      ],
+      "Explenation": "Project Schedule Management focuses on timely completion of the project (PMBOK Guide, Section 6)."
+    },
+    {
+      "qid": 56,
+      "difficulty": "easy",
+      "QuestionText": "What is a change request?",
+      "Choices": [
+        { "id": 1, "choicetext": "A formal proposal to modify any project document or deliverable", "iscorrect": true },
+        { "id": 2, "choicetext": "An informal team discussion", "iscorrect": false },
+        { "id": 3, "choicetext": "A risk identification technique", "iscorrect": false },
+        { "id": 4, "choicetext": "A document outlining deliverables", "iscorrect": false }
+      ],
+      "Explenation": "Change requests are formal proposals for changes in project scope, cost, schedule or other elements (PMBOK Guide, Section 4.6)."
+    },
+    {
+      "qid": 57,
+      "difficulty": "easy",
+      "QuestionText": "What is the primary responsibility of the project sponsor?",
+      "Choices": [
+        { "id": 1, "choicetext": "Providing resources and support and approving the project charter", "iscorrect": true },
+        { "id": 2, "choicetext": "Managing the project team", "iscorrect": false },
+        { "id": 3, "choicetext": "Performing quality inspections", "iscorrect": false },
+        { "id": 4, "choicetext": "Developing the schedule", "iscorrect": false }
+      ],
+      "Explenation": "Project sponsors authorize the project and provide necessary funding and support (PMBOK Guide, Section 1.7)."
+    },
+    {
+      "qid": 58,
+      "difficulty": "easy",
+      "QuestionText": "What is the main output of the 'Close Project or Phase' process?",
+      "Choices": [
+        { "id": 1, "choicetext": "Final product, service, or result transition and closure documents", "iscorrect": true },
+        { "id": 2, "choicetext": "Project schedule", "iscorrect": false },
+        { "id": 3, "choicetext": "Updated risk register", "iscorrect": false },
+        { "id": 4, "choicetext": "Change requests", "iscorrect": false }
+      ],
+      "Explenation": "The 'Close Project or Phase' process results in formal acceptance and closure of project or phase (PMBOK Guide, Section 4.7)."
+    },
+    {
+      "qid": 59,
+      "difficulty": "easy",
+      "QuestionText": "What do you call work that is performed to complete the project scope?",
+      "Choices": [
+        { "id": 1, "choicetext": "Project Work", "iscorrect": true },
+        { "id": 2, "choicetext": "Product Backlog", "iscorrect": false },
+        { "id": 3, "choicetext": "Organizational Process Assets", "iscorrect": false },
+        { "id": 4, "choicetext": "Project Portfolio", "iscorrect": false }
+      ],
+      "Explenation": "Project work is the effort performed to create the deliverables and meet project objectives (PMBOK Guide, Section 1.2)."
+    },
+    {
+      "qid": 60,
+      "difficulty": "easy",
+      "QuestionText": "Which document outlines how to manage communications on a project?",
+      "Choices": [
+        { "id": 1, "choicetext": "Communications Management Plan", "iscorrect": true },
+        { "id": 2, "choicetext": "Risk Management Plan", "iscorrect": false },
+        { "id": 3, "choicetext": "Procurement Management Plan", "iscorrect": false },
+        { "id": 4, "choicetext": "Quality Management Plan", "iscorrect": false }
+      ],
+      "Explenation": "The Communications Management Plan describes how project communication will be planned and executed (PMBOK Guide, Section 10.1)."
+    },
+    {
+      "qid": 61,
+      "difficulty": "very hard",
+      "QuestionText": "During a complex multi-phase project, a significant risk has materialized despite prior mitigation efforts. Which integrated process ensures that the impact of this risk on the baseline is properly managed, and what are its key components?",
+      "Choices": [
+        { "id": 1, "choicetext": "Perform Integrated Change Control; it involves reviewing, approving, and managing change requests affecting baselines", "iscorrect": true },
+        { "id": 2, "choicetext": "Monitor Risks; it identifies new risks and updates the risk register", "iscorrect": false },
+        { "id": 3, "choicetext": "Control Schedule; it analyzes schedule variance and updates forecasts", "iscorrect": false },
+        { "id": 4, "choicetext": "Plan Risk Responses; it determines appropriate actions for risk mostly at initiation", "iscorrect": false }
+      ],
+      "Explenation": "Perform Integrated Change Control is the process responsible for evaluating change requests, including impacts of risk events on cost, schedule, and scope baselines, and managing them during the project lifecycle (PMBOK Guide, Section 4.6)."
+    },
+    {
+      "qid": 62,
+      "difficulty": "very hard",
+      "QuestionText": "A project manager is using Monte Carlo simulation to quantitatively analyze project risk. Which key assumptions underpin the accuracy of this method and how does this influence decision making?",
+      "Choices": [
+        { "id": 1, "choicetext": "Input probability distributions of variables are accurate; it allows probabilistic forecasting of cost and schedule outcomes", "iscorrect": true },
+        { "id": 2, "choicetext": "All risks are independent; it ensures risk mitigation plans remove all threats", "iscorrect": false },
+        { "id": 3, "choicetext": "Risk events occur sequentially; it simplifies schedule estimations", "iscorrect": false },
+        { "id": 4, "choicetext": "Only positive risk impacts are modeled; it avoids pessimistic estimates", "iscorrect": false }
+      ],
+      "Explenation": "Monte Carlo simulation requires accurate identification of input distributions for cost/duration; it probabilistically forecasts likely project results to inform risk response decisions (PMBOK Guide, Section 11.4)."
+    },
+    {
+      "qid": 63,
+      "difficulty": "very hard",
+      "QuestionText": "In resource-constrained scheduling, how does the Critical Chain method address uncertainty and what buffers are integrated to protect the project schedule?",
+      "Choices": [
+        { "id": 1, "choicetext": "By focusing on resource availability, it adds feeding buffers and a project buffer to absorb delays", "iscorrect": true },
+        { "id": 2, "choicetext": "By overlapping activities aggressively, it increases float on non-critical paths", "iscorrect": false },
+        { "id": 3, "choicetext": "By extending activity durations conservatively and submitting them for approval", "iscorrect": false },
+        { "id": 4, "choicetext": "By utilizing Monte Carlo simulations for schedule risks", "iscorrect": false }
+      ],
+      "Explenation": "Critical Chain Scheduling limits resource contention by adding buffers—feeding buffers protect non-critical paths feeding the critical chain and a project buffer protects the critical chain itself (PMBOK Guide, Section 6.6)."
+    },
+    {
+      "qid": 64,
+      "difficulty": "very hard",
+      "QuestionText": "How should a project manager integrate Agile iterative planning with predictive lifecycle scheduling to maintain control in a hybrid project environment?",
+      "Choices": [
+        { "id": 1, "choicetext": "Incrementally plan detail in iterations with rolling wave planning, while maintaining predictive baselines for overall project control", "iscorrect": true },
+        { "id": 2, "choicetext": "Replace all predictive methods with Agile iterations and abandon baseline schedules", "iscorrect": false },
+        { "id": 3, "choicetext": "Use fixed scope with rigid schedules ignoring iterative changes", "iscorrect": false },
+        { "id": 4, "choicetext": "Focus only on cost baselines in predictive planning and delegate all schedule control to Agile teams", "iscorrect": false }
+      ],
+      "Explenation": "Hybrid projects benefit from rolling wave planning where high-level baselines are established, and detailed Agile iteration plans are developed progressively to balance predictability with flexibility (PMBOK Guide, Section 4.3, Agile Practice Guide)."
+    },
+    {
+      "qid": 65,
+      "difficulty": "very hard",
+      "QuestionText": "In earned value management, if the Schedule Performance Index (SPI) is greater than 1 but the Cost Performance Index (CPI) is less than 1, what is the project’s condition and what corrective action should be prioritized?",
+      "Choices": [
+        { "id": 1, "choicetext": "The project is ahead of schedule but over budget; focus on cost control measures", "iscorrect": true },
+        { "id": 2, "choicetext": "The project is behind schedule and under budget; accelerate activities", "iscorrect": false },
+        { "id": 3, "choicetext": "Project is on track; no action required", "iscorrect": false },
+        { "id": 4, "choicetext": "Both schedule and cost are behind baseline; perform scope reduction", "iscorrect": false }
+      ],
+      "Explenation": "An SPI > 1 indicates schedule efficiency better than planned; CPI < 1 indicates cost inefficiencies. Attention should focus on controlling and reducing costs while maintaining schedule (PMBOK Guide, Section 7.4)."
+    },
+    {
+      "qid": 66,
+      "difficulty": "very hard",
+      "QuestionText": "When conducting a make-or-buy analysis, which factors must be rigorously evaluated to select the optimal procurement strategy for a highly complex deliverable?",
+      "Choices": [
+        { "id": 1, "choicetext": "Cost, schedule impact, resource availability, technical capability, and risk exposure", "iscorrect": true },
+        { "id": 2, "choicetext": "Only the cost of buying versus making", "iscorrect": false },
+        { "id": 3, "choicetext": "Team preferences and historical vendor relationships", "iscorrect": false },
+        { "id": 4, "choicetext": "Project phase duration and stakeholder profiles", "iscorrect": false }
+      ],
+      "Explenation": "Effective make-or-buy decisions consider financial, schedule, resource, technical feasibility, and risk factors to ensure procuring the deliverable supports project success (PMBOK Guide, Section 12.1)."
+    },
+    {
+      "qid": 67,
+      "difficulty": "very hard",
+      "QuestionText": "Explain the role of probabilistic distributions in quantitative risk analysis and how they influence project contingency planning.",
+      "Choices": [
+        { "id": 1, "choicetext": "They represent the range and likelihood of possible outcomes, enabling calculation of contingency reserves to address uncertainty", "iscorrect": true },
+        { "id": 2, "choicetext": "They guarantee exact costs and durations reducing need for contingency", "iscorrect": false },
+        { "id": 3, "choicetext": "They identify stakeholders' influence on project communication plans", "iscorrect": false },
+        { "id": 4, "choicetext": "They limit risks solely to internal project team risks", "iscorrect": false }
+      ],
+      "Explenation": "Probabilistic distributions quantify uncertainty by modeling variability and outcomes. Contingency reserves are derived to cover identified risks (PMBOK Guide, Section 11.4)."
+    },
+    {
+      "qid": 68,
+      "difficulty": "very hard",
+      "QuestionText": "A complex project uses Earned Value Management. Describe how the 'Estimate to Complete' (ETC) is calculated and its significance in forecasting.",
+      "Choices": [
+        { "id": 1, "choicetext": "ETC estimates effort required to complete remaining project work; it helps forecast total project cost (EAC)", "iscorrect": true },
+        { "id": 2, "choicetext": "ETC is a fixed value equal to original budget minus current expenses", "iscorrect": false },
+        { "id": 3, "choicetext": "ETC is only used in schedule analysis and not cost control", "iscorrect": false },
+        { "id": 4, "choicetext": "ETC replaces the original cost baseline at project start", "iscorrect": false }
+      ],
+      "Explenation": "ETC forecasts remaining required effort to finish project work, a major input to estimate at completion, enabling proactive budget management (PMBOK Guide, Section 7.4)."
+    },
+    {
+      "qid": 69,
+      "difficulty": "very hard",
+      "QuestionText": "When conducting stakeholder analysis, how can power/interest grids be leveraged to enhance project communication strategies?",
+      "Choices": [
+        { "id": 1, "choicetext": "By categorizing stakeholders based on influence and interest to tailor communication frequency and detail", "iscorrect": true },
+        { "id": 2, "choicetext": "By assigning all stakeholders the same communication plan regardless of their role", "iscorrect": false },
+        { "id": 3, "choicetext": "By only focusing on high power and low interest stakeholders", "iscorrect": false },
+        { "id": 4, "choicetext": "By excluding stakeholders with low interest in communication plans", "iscorrect": false }
+      ],
+      "Explenation": "Power/interest grids help customize communication strategies, ensuring optimal engagement levels appropriate to stakeholder influence and interest (PMBOK Guide, Section 13.2)."
+    },
+    {
+      "qid": 70,
+      "difficulty": "very hard",
+      "QuestionText": "Explain how the configuration management system supports integrated change control and project quality in a large program.",
+      "Choices": [
+        { "id": 1, "choicetext": "It tracks, controls, and documents changes to project deliverables, ensuring consistency and alignment with quality standards", "iscorrect": true },
+        { "id": 2, "choicetext": "It outsources procurement to vendors", "iscorrect": false },
+        { "id": 3, "choicetext": "It only monitors stakeholder communications", "iscorrect": false },
+        { "id": 4, "choicetext": "It manages project cost baselines exclusively", "iscorrect": false }
+      ],
+      "Explenation": "Configuration management ensures all changes to deliverables are identified, reviewed, and controlled providing traceability and supporting quality compliance (PMBOK Guide, Section 4.6)."
+    },
+    {
+      "qid": 71,
+      "difficulty": "very hard",
+      "QuestionText": "When preparing a procurement statement of work (SOW) for a highly technical deliverable, what complexities must be addressed to minimize contractual risk?",
+      "Choices": [
+        { "id": 1, "choicetext": "Clear scope definition, acceptance criteria, performance standards, and change control procedures", "iscorrect": true },
+        { "id": 2, "choicetext": "Vague deliverables to allow vendor flexibility", "iscorrect": false },
+        { "id": 3, "choicetext": "Omitting schedule details to simplify negotiation", "iscorrect": false },
+        { "id": 4, "choicetext": "Delegating responsibility for scope definition to the vendor", "iscorrect": false }
+      ],
+      "Explenation": "A comprehensive SOW minimizes misunderstandings and protects against scope creep, risks, and disputes (PMBOK Guide, Section 12.2)."
+    },
+    {
+      "qid": 72,
+      "difficulty": "very hard",
+      "QuestionText": "During risk response planning, how does 'upside risk' differ in handling approaches compared to 'downside risk', and what strategies are commonly employed?",
+      "Choices": [
+        { "id": 1, "choicetext": "Upside risks (opportunities) warrant strategies like exploit and enhance, while downside risks use avoid or mitigate", "iscorrect": true },
+        { "id": 2, "choicetext": "Upside risks are ignored but downside risks require immediate action", "iscorrect": false },
+        { "id": 3, "choicetext": "Both risk types use identical response strategies", "iscorrect": false },
+        { "id": 4, "choicetext": "Only downside risks are considered in formal project plans", "iscorrect": false }
+      ],
+      "Explenation": "Upside risks deserve proactive strategies to maximize benefit, unlike threat risks which require protective measures (PMBOK Guide, Section 11.5)."
+    },
+    {
+      "qid": 73,
+      "difficulty": "very hard",
+      "QuestionText": "Explain how 'lessons learned' registers contribute to organizational process assets and future project performance.",
+      "Choices": [
+        { "id": 1, "choicetext": "By capturing historical knowledge, they reduce repetition of mistakes and promote continuous improvement", "iscorrect": true },
+        { "id": 2, "choicetext": "They serve only compliance documentation without practical impact", "iscorrect": false },
+        { "id": 3, "choicetext": "They are used to assign blame for failures", "iscorrect": false },
+        { "id": 4, "choicetext": "They replace formal project plans", "iscorrect": false }
+      ],
+      "Explenation": "Recorded lessons learned constitute organizational process assets that inform decision-making and improve project execution (PMBOK Guide, Section 4.4)."
+    },
+    {
+      "qid": 74,
+      "difficulty": "very hard",
+      "QuestionText": "In a program with multiple interdependent projects, how can a project manager ensure integration without compromising individual project autonomy?",
+      "Choices": [
+        { "id": 1, "choicetext": "Coordinate aligned objectives via program management office while respecting individual project governance", "iscorrect": true },
+        { "id": 2, "choicetext": "Consolidate all projects into one large project with a single plan", "iscorrect": false },
+        { "id": 3, "choicetext": "Ignore interdependencies to expedite individual projects", "iscorrect": false },
+        { "id": 4, "choicetext": "Stop all cross-project communications", "iscorrect": false }
+      ],
+      "Explenation": "Program management offices manage integration and coordination, enabling synergy while allowing project-specific flexibility (PMBOK Guide, Section 1.4)."
+    },
+    {
+      "qid": 75,
+      "difficulty": "very hard",
+      "QuestionText": "Describe the considerations and challenges in managing organizational process assets (OPA) updates during a high-velocity agile project.",
+      "Choices": [
+        { "id": 1, "choicetext": "Balancing quick iterative updates with maintaining process consistency; automation can help capture lessons learned timely", "iscorrect": true },
+        { "id": 2, "choicetext": "OPAs are irrelevant in agile contexts", "iscorrect": false },
+        { "id": 3, "choicetext": "OPAs should only be updated after project closure", "iscorrect": false },
+        { "id": 4, "choicetext": "All team members must approve OPA updates", "iscorrect": false }
+      ],
+      "Explenation": "In agile, OPAs like lessons learned must be updated continuously but balanced with the need for agile speed and flexibility; automated tools help support this (PMBOK Guide, Agile Practice Guide)."
+    },
+    {
+      "qid": 76,
+      "difficulty": "very hard",
+      "QuestionText": "During project execution, continuous inspection finds defect rates exceeding quality thresholds. Which quality management processes should be employed to address root causes and prevent recurrence?",
+      "Choices": [
+        { "id": 1, "choicetext": "Manage Quality to improve processes and Control Quality to validate deliverable conformity", "iscorrect": true },
+        { "id": 2, "choicetext": "Close Project to halt work immediately", "iscorrect": false },
+        { "id": 3, "choicetext": "Plan Quality Management only, to redefine metrics", "iscorrect": false },
+        { "id": 4, "choicetext": "Neglect findings if schedule is critical", "iscorrect": false }
+      ],
+      "Explenation": "Manage Quality focuses on process improvements including root cause analysis; Control Quality verifies product quality (PMBOK Guide, Sections 8.2 and 8.3)."
+    },
+    {
+      "qid": 77,
+      "difficulty": "very hard",
+      "QuestionText": "Which advanced procurement negotiation technique minimizes risk to both buyer and seller in uncertain environments?",
+      "Choices": [
+        { "id": 1, "choicetext": "Incentive contracts which align seller performance incentives with project targets", "iscorrect": true },
+        { "id": 2, "choicetext": "Firm Fixed Price contracts with no flexibility", "iscorrect": false },
+        { "id": 3, "choicetext": "Verbal agreements relying on trust", "iscorrect": false },
+        { "id": 4, "choicetext": "Ignore contractual terms to speed up delivery", "iscorrect": false }
+      ],
+      "Explenation": "Incentive contracts motivate sellers to perform cost-effectively and address shared risks (PMBOK Guide, Section 12.1)."
+    },
+    {
+      "qid": 78,
+      "difficulty": "very hard",
+      "QuestionText": "Explain the relationship between organizational process assets (OPA), enterprise environmental factors (EEF), and their impact on project tailoring decisions.",
+      "Choices": [
+        { "id": 1, "choicetext": "OPAs are internal supporting documents and historical data; EEFs are conditions external or internal influencing tailoring to fit specific project context", "iscorrect": true },
+        { "id": 2, "choicetext": "Both OPAs and EEFs are irrelevant in tailoring", "iscorrect": false },
+        { "id": 3, "choicetext": "Only EEFs guide tailoring; OPAs are fixed standards", "iscorrect": false },
+        { "id": 4, "choicetext": "OPAs always supersede EEFs during tailoring", "iscorrect": false }
+      ],
+      "Explenation": "OPAs provide internal processes and lessons learned; EEFs include culture, infrastructure, market influences—all inform tailoring (PMBOK Guide, Sections 2.1.3 and 2.1.4)."
+    },
+    {
+      "qid": 79,
+      "difficulty": "very hard",
+      "QuestionText": "In a multi-vendor procurement, what contractual and management challenges increase risk, and how can the project manager mitigate these risks?",
+      "Choices": [
+        { "id": 1, "choicetext": "Challenges include coordination complexity and interface management; mitigation includes clear contracts, integration meetings, and escalation paths", "iscorrect": true },
+        { "id": 2, "choicetext": "No additional risk exists compared to single vendor procurement", "iscorrect": false },
+        { "id": 3, "choicetext": "Only individual vendor contracts are important; integration is not a concern", "iscorrect": false },
+        { "id": 4, "choicetext": "Avoid communication between vendors to prevent conflicts", "iscorrect": false }
+      ],
+      "Explenation": "Multi-vendor projects require proactive integration and communication management to address increased risks (PMBOK Guide, Section 12.3)."
+    },
+    {
+      "qid": 80,
+      "difficulty": "very hard",
+      "QuestionText": "Explain the impact of complex stakeholder power dynamics on change control during the execution phase and how a project manager can maintain effective governance.",
+      "Choices": [
+        { "id": 1, "choicetext": "High-power stakeholders can influence change approvals, requiring transparent processes and stakeholder engagement to sustain governance", "iscorrect": true },
+        { "id": 2, "choicetext": "Stakeholder power is irrelevant to change control", "iscorrect": false },
+        { "id": 3, "choicetext": "Project manager can ignore stakeholder influence to speed changes", "iscorrect": false },
+        { "id": 4, "choicetext": "Change control is handled only by the project team without stakeholder input", "iscorrect": false }
+      ],
+      "Explenation": "Complex stakeholder power requires engagement and transparent change control to avoid conflict and maintain project alignment (PMBOK Guide, Sections 4.6 and 13)."
+    },
+    {
+      "qid": 81,
+      "difficulty": "easy",
+      "QuestionText": "Which document formally authorizes a project and provides the project manager with authority?",
+      "Choices": [
+        { "id": 1, "choicetext": "Project Charter", "iscorrect": true },
+        { "id": 2, "choicetext": "Project Management Plan", "iscorrect": false },
+        { "id": 3, "choicetext": "Scope Statement", "iscorrect": false },
+        { "id": 4, "choicetext": "Work Breakdown Structure", "iscorrect": false }
+      ],
+      "Explenation": "The Project Charter formally authorizes the project and grants authority to the project manager (PMBOK Guide, Section 4.1)."
+    },
+    {
+      "qid": 82,
+      "difficulty": "easy",
+      "QuestionText": "What does WBS stand for in project management?",
+      "Choices": [
+        { "id": 1, "choicetext": "Work Breakdown Structure", "iscorrect": true },
+        { "id": 2, "choicetext": "Work Business Summary", "iscorrect": false },
+        { "id": 3, "choicetext": "Work Budget Sheet", "iscorrect": false },
+        { "id": 4, "choicetext": "Work Backlog Schedule", "iscorrect": false }
+      ],
+      "Explenation": "WBS stands for Work Breakdown Structure, which decomposes project scope into smaller, manageable components (PMBOK Guide, Section 5.4)."
+    },
+    {
+      "qid": 83,
+      "difficulty": "easy",
+      "QuestionText": "Which of the following is not a process group in project management?",
+      "Choices": [
+        { "id": 1, "choicetext": "Monitoring and Controlling", "iscorrect": false },
+        { "id": 2, "choicetext": "Executing", "iscorrect": false },
+        { "id": 3, "choicetext": "Designing", "iscorrect": true },
+        { "id": 4, "choicetext": "Planning", "iscorrect": false }
+      ],
+      "Explenation": "'Designing' is not a recognized process group. The five process groups are Initiating, Planning, Executing, Monitoring and Controlling, and Closing (PMBOK Guide, Introduction)."
+    },
+    {
+      "qid": 84,
+      "difficulty": "easy",
+      "QuestionText": "Who is primarily responsible for managing a project?",
+      "Choices": [
+        { "id": 1, "choicetext": "Project Manager", "iscorrect": true },
+        { "id": 2, "choicetext": "Project Sponsor", "iscorrect": false },
+        { "id": 3, "choicetext": "Stakeholder", "iscorrect": false },
+        { "id": 4, "choicetext": "Resource Manager", "iscorrect": false }
+      ],
+      "Explenation": "The Project Manager is responsible for managing the project work and delivering the objectives (PMBOK Guide, Section 3.2)."
+    },
+    {
+      "qid": 85,
+      "difficulty": "easy",
+      "QuestionText": "Which document contains a list of identified project risks?",
+      "Choices": [
+        { "id": 1, "choicetext": "Risk Register", "iscorrect": true },
+        { "id": 2, "choicetext": "Stakeholder Register", "iscorrect": false },
+        { "id": 3, "choicetext": "Issue Log", "iscorrect": false },
+        { "id": 4, "choicetext": "Change Log", "iscorrect": false }
+      ],
+      "Explenation": "The Risk Register contains all identified risks along with their characteristics and planned responses (PMBOK Guide, Section 11.2)."
+    },
+    {
+      "qid": 86,
+      "difficulty": "easy",
+      "QuestionText": "Which of the following best describes a deliverable?",
+      "Choices": [
+        { "id": 1, "choicetext": "Any unique and verifiable product, service, or result", "iscorrect": true },
+        { "id": 2, "choicetext": "Project schedule", "iscorrect": false },
+        { "id": 3, "choicetext": "Meeting minutes", "iscorrect": false },
+        { "id": 4, "choicetext": "Issue described in an issue log", "iscorrect": false }
+      ],
+      "Explenation": "A deliverable is a unique and verifiable product or output from the project (PMBOK Guide, Section 1.2)."
+    },
+    {
+      "qid": 87,
+      "difficulty": "easy",
+      "QuestionText": "Which process involves formally accepting completed deliverables?",
+      "Choices": [
+        { "id": 1, "choicetext": "Validate Scope", "iscorrect": true },
+        { "id": 2, "choicetext": "Control Quality", "iscorrect": false },
+        { "id": 3, "choicetext": "Define Scope", "iscorrect": false },
+        { "id": 4, "choicetext": "Plan Scope Management", "iscorrect": false }
+      ],
+      "Explenation": "Validate Scope is the process where deliverables are reviewed and formally accepted (PMBOK Guide, Section 5.5)."
+    },
+    {
+      "qid": 88,
+      "difficulty": "easy",
+      "QuestionText": "Which is an example of a project constraint?",
+      "Choices": [
+        { "id": 1, "choicetext": "Fixed project deadline", "iscorrect": true },
+        { "id": 2, "choicetext": "Project risk", "iscorrect": false },
+        { "id": 3, "choicetext": "Stakeholder influence", "iscorrect": false },
+        { "id": 4, "choicetext": "Organizational culture", "iscorrect": false }
+      ],
+      "Explenation": "Constraints are limiting factors such as time, cost, and scope. A fixed deadline is a common constraint (PMBOK Guide, Section 1.7)."
+    },
+    {
+      "qid": 89,
+      "difficulty": "easy",
+      "QuestionText": "What is the purpose of the 'Close Project or Phase' process?",
+      "Choices": [
+        { "id": 1, "choicetext": "To finalize all activities and formally close the project or phase", "iscorrect": true },
+        { "id": 2, "choicetext": "To start the project execution", "iscorrect": false },
+        { "id": 3, "choicetext": "To monitor stakeholder engagement", "iscorrect": false },
+        { "id": 4, "choicetext": "To control the project scope", "iscorrect": false }
+      ],
+      "Explenation": "Closing finalizes all project or phase activities and formally completes the work (PMBOK Guide, Section 4.7)."
+    },
+    {
+      "qid": 90,
+      "difficulty": "easy",
+      "QuestionText": "Which of the following is NOT a type of organizational structure?",
+      "Choices": [
+        { "id": 1, "choicetext": "Matrix", "iscorrect": false },
+        { "id": 2, "choicetext": "Functional", "iscorrect": false },
+        { "id": 3, "choicetext": "Hierarchical", "iscorrect": true },
+        { "id": 4, "choicetext": "Projectized", "iscorrect": false }
+      ],
+      "Explenation": "Matrix, Functional, and Projectized are organizational types; Hierarchical is not a standard PMI classification (PMBOK Guide, Section 2.4)."
+    },
+    {
+      "qid": 91,
+      "difficulty": "easy",
+      "QuestionText": "What does the term 'scope creep' mean?",
+      "Choices": [
+        { "id": 1, "choicetext": "Uncontrolled changes or continuous growth in project scope", "iscorrect": true },
+        { "id": 2, "choicetext": "A method for scheduling", "iscorrect": false },
+        { "id": 3, "choicetext": "A procurement technique", "iscorrect": false },
+        { "id": 4, "choicetext": "Stakeholder analysis tool", "iscorrect": false }
+      ],
+      "Explenation": "Scope creep involves uncontrolled changes that extend the original scope without appropriate controls (PMBOK Guide, Section 5.6)."
+    },
+    {
+      "qid": 92,
+      "difficulty": "easy",
+      "QuestionText": "Which tool is commonly used for identifying project stakeholders?",
+      "Choices": [
+        { "id": 1, "choicetext": "Stakeholder analysis", "iscorrect": true },
+        { "id": 2, "choicetext": "Risk Register", "iscorrect": false },
+        { "id": 3, "choicetext": "Change Log", "iscorrect": false },
+        { "id": 4, "choicetext": "Resource Matrix", "iscorrect": false }
+      ],
+      "Explenation": "Stakeholder analysis helps identify and document the interests, involvement, and potential influence of project stakeholders (PMBOK Guide, Section 13.1)."
+    },
+    {
+      "qid": 93,
+      "difficulty": "easy",
+      "QuestionText": "Which term describes the lowest level of the Work Breakdown Structure (WBS)?",
+      "Choices": [
+        { "id": 1, "choicetext": "Work Package", "iscorrect": true },
+        { "id": 2, "choicetext": "Activity", "iscorrect": false },
+        { "id": 3, "choicetext": "Milestone", "iscorrect": false },
+        { "id": 4, "choicetext": "Deliverable", "iscorrect": false }
+      ],
+      "Explenation": "A Work Package is the smallest unit of work in the WBS and can be assigned and managed (PMBOK Guide, Section 5.4)."
+    },
+    {
+      "qid": 94,
+      "difficulty": "easy",
+      "QuestionText": "What is the key input to the 'Develop Project Schedule' process?",
+      "Choices": [
+        { "id": 1, "choicetext": "Activity list and durations", "iscorrect": true },
+        { "id": 2, "choicetext": "Risk Register", "iscorrect": false },
+        { "id": 3, "choicetext": "Scope Statement", "iscorrect": false },
+        { "id": 4, "choicetext": "Quality Management Plan", "iscorrect": false }
+      ],
+      "Explenation": "The activity list and estimated durations are essential inputs for creating the project schedule (PMBOK Guide, Section 6.5)."
+    },
+    {
+      "qid": 95,
+      "difficulty": "easy",
+      "QuestionText": "Which of these is an example of a risk response strategy for threats?",
+      "Choices": [
+        { "id": 1, "choicetext": "Mitigate", "iscorrect": true },
+        { "id": 2, "choicetext": "Exploit", "iscorrect": false },
+        { "id": 3, "choicetext": "Enhance", "iscorrect": false },
+        { "id": 4, "choicetext": "Accept", "iscorrect": false }
+      ],
+      "Explenation": "Mitigation reduces the probability or impact of negative risks (PMBOK Guide, Section 11.5)."
+    },
+    {
+      "qid": 96,
+      "difficulty": "easy",
+      "QuestionText": "What is the primary purpose of the 'Control Quality' process?",
+      "Choices": [
+        { "id": 1, "choicetext": "To monitor and record results from quality activities", "iscorrect": true },
+        { "id": 2, "choicetext": "To define project requirements", "iscorrect": false },
+        { "id": 3, "choicetext": "To estimate activity durations", "iscorrect": false },
+        { "id": 4, "choicetext": "To approve project budgets", "iscorrect": false }
+      ],
+      "Explenation": "Control Quality checks that deliverables meet quality requirements (PMBOK Guide, Section 8.3)."
+    },
+    {
+      "qid": 97,
+      "difficulty": "easy",
+      "QuestionText": "What is the acronym 'PMO' stand for?",
+      "Choices": [
+        { "id": 1, "choicetext": "Project Management Office", "iscorrect": true },
+        { "id": 2, "choicetext": "Performance Measurement Output", "iscorrect": false },
+        { "id": 3, "choicetext": "Project Maintenance Organization", "iscorrect": false },
+        { "id": 4, "choicetext": "Process Management Objective", "iscorrect": false }
+      ],
+      "Explenation": "PMO stands for Project Management Office, which supports project management throughout the organization (PMBOK Guide, Section 1.4)."
+    },
+    {
+      "qid": 98,
+      "difficulty": "easy",
+      "QuestionText": "Which of these is a key output of the 'Conduct Procurements' process?",
+      "Choices": [
+        { "id": 1, "choicetext": "Selected sellers and signed contracts", "iscorrect": true },
+        { "id": 2, "choicetext": "Risk Register", "iscorrect": false },
+        { "id": 3, "choicetext": "Project Charter", "iscorrect": false },
+        { "id": 4, "choicetext": "Stakeholder Register", "iscorrect": false }
+      ],
+      "Explenation": "Conduct Procurements results in selected sellers and signed procurement contracts (PMBOK Guide, Section 12.2)."
+    },
+    {
+      "qid": 99,
+      "difficulty": "easy",
+      "QuestionText": "What is the purpose of a project milestone?",
+      "Choices": [
+        { "id": 1, "choicetext": "To signify key events or checkpoints in the project schedule", "iscorrect": true },
+        { "id": 2, "choicetext": "To assign tasks to team members", "iscorrect": false },
+        { "id": 3, "choicetext": "To calculate project costs", "iscorrect": false },
+        { "id": 4, "choicetext": "To evaluate risks", "iscorrect": false }
+      ],
+      "Explenation": "Milestones indicate significant events or stages without duration (PMBOK Guide, Section 6.2)."
+    },
+    {
+      "qid": 100,
+      "difficulty": "easy",
+      "QuestionText": "Which process group includes the development of the project management plan?",
+      "Choices": [
+        { "id": 1, "choicetext": "Planning", "iscorrect": true },
+        { "id": 2, "choicetext": "Executing", "iscorrect": false },
+        { "id": 3, "choicetext": "Monitoring and Controlling", "iscorrect": false },
+        { "id": 4, "choicetext": "Closing", "iscorrect": false }
+      ],
+      "Explenation": "The project management plan is developed in the Planning process group (PMBOK Guide, Section 4.2)."
+    },
+    {
+      "qid": 101,
+      "difficulty": "easy",
+      "QuestionText": "What is a stakeholder register?",
+      "Choices": [
+        { "id": 1, "choicetext": "A document listing all stakeholders and relevant information", "iscorrect": true },
+        { "id": 2, "choicetext": "A schedule of project activities", "iscorrect": false },
+        { "id": 3, "choicetext": "A risk management plan", "iscorrect": false },
+        { "id": 4, "choicetext": "A list of project deliverables", "iscorrect": false }
+      ],
+      "Explenation": "The stakeholder register identifies all stakeholders and their interests, influence, and engagement (PMBOK Guide, Section 13.1)."
+    },
+    {
+      "qid": 102,
+      "difficulty": "easy",
+      "QuestionText": "Which document describes how changes will be managed in a project?",
+      "Choices": [
+        { "id": 1, "choicetext": "Change Management Plan", "iscorrect": true },
+        { "id": 2, "choicetext": "Stakeholder Engagement Plan", "iscorrect": false },
+        { "id": 3, "choicetext": "Quality Management Plan", "iscorrect": false },
+        { "id": 4, "choicetext": "Risk Management Plan", "iscorrect": false }
+      ],
+      "Explenation": "The Change Management Plan defines procedures for change requests and approvals (PMBOK Guide, Section 4.3)."
+    },
+    {
+      "qid": 103,
+      "difficulty": "easy",
+      "QuestionText": "Which process is responsible for tracking, reviewing, and reporting project progress?",
+      "Choices": [
+        { "id": 1, "choicetext": "Monitor and Control Project Work", "iscorrect": true },
+        { "id": 2, "choicetext": "Direct and Manage Project Work", "iscorrect": false },
+        { "id": 3, "choicetext": "Control Scope", "iscorrect": false },
+        { "id": 4, "choicetext": "Close Project or Phase", "iscorrect": false }
+      ],
+      "Explenation": "Monitor and Control Project Work involves tracking and assessing project progress (PMBOK Guide, Section 4.5)."
+    },
+    {
+      "qid": 104,
+      "difficulty": "easy",
+      "QuestionText": "What is the primary input to the Identify Risks process?",
+      "Choices": [
+        { "id": 1, "choicetext": "Risk Management Plan", "iscorrect": true },
+        { "id": 2, "choicetext": "Quality Management Plan", "iscorrect": false },
+        { "id": 3, "choicetext": "Project Charter", "iscorrect": false },
+        { "id": 4, "choicetext": "Schedule Baseline", "iscorrect": false }
+      ],
+      "Explenation": "The Risk Management Plan sets the approach for identifying risk (PMBOK Guide, Section 11.2)."
+    },
+    {
+      "qid": 105,
+      "difficulty": "easy",
+      "QuestionText": "Which process is responsible for ensuring the appropriate levels of staffing are available for project activities?",
+      "Choices": [
+        { "id": 1, "choicetext": "Acquire Resources", "iscorrect": true },
+        { "id": 2, "choicetext": "Develop Team", "iscorrect": false },
+        { "id": 3, "choicetext": "Manage Team", "iscorrect": false },
+        { "id": 4, "choicetext": "Plan Resource Management", "iscorrect": false }
+      ],
+      "Explenation": "Acquire Resources involves obtaining the team members, equipment, and materials necessary to perform the work (PMBOK Guide, Section 9.4)."
     }
   ]
 }
