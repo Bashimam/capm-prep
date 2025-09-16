@@ -9,6 +9,15 @@ let quizState = {
   answers: [],
 };
 
+function scrollToElementById(elementId) {
+  const el = document.getElementById(elementId);
+  if (el && typeof el.scrollIntoView === 'function') {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } else {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
+
 // Ensure required DOM nodes exist (helps on environments where HTML didn't load fully yet)
 function ensureDomStructure() {
   let main = document.querySelector('main');
@@ -197,6 +206,8 @@ function startQuiz() {
   quizState.correct = 0;
   quizState.answers = [];
   renderQuiz();
+  // Scroll to quiz section after rendering
+  setTimeout(() => scrollToElementById('quiz-section'), 0);
 }
 
 function renderQuiz() {
@@ -205,6 +216,8 @@ function renderQuiz() {
   document.getElementById('setup-section').style.display = 'none';
   quizSection.style.display = '';
   document.getElementById('results-section').style.display = 'none';
+  // Ensure the quiz is visible and on-screen
+  setTimeout(() => scrollToElementById('quiz-section'), 0);
 
   const q = quizState.quizQuestions[quizState.current];
   if (!q) {
