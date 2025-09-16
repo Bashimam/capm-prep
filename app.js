@@ -10,12 +10,33 @@ let quizState = {
 };
 
 // Load questions.json
-fetch('questions.json')
-  .then(res => res.json())
-  .then(data => {
-    questions = data.questions;
-    renderSetup();
-  });
+if (location.protocol === 'file:') {
+  // When opened directly from the filesystem, avoid fetch to prevent CORS errors
+  const setupSection = document.getElementById('setup-section');
+  if (setupSection) {
+    const errorDiv = document.createElement('div');
+    errorDiv.className = 'error';
+    errorDiv.innerHTML = 'This page is opened directly from your computer. For the quiz to load questions, please run a local server (e.g., py -m http.server) or deploy to GitHub Pages.';
+    setupSection.appendChild(errorDiv);
+  }
+  // Do not attempt fetch under file:// to keep console clean
+} else {
+  fetch('questions.json')
+    .then(res => res.json())
+    .then(data => {
+      questions = data.questions;
+      renderSetup();
+    })
+    .catch(() => {
+      const setupSection = document.getElementById('setup-section');
+      if (setupSection) {
+        const errorDiv = document.createElement('div');
+        errorDiv.className = 'error';
+        errorDiv.innerHTML = 'Failed to load questions. Please refresh the page.';
+        setupSection.appendChild(errorDiv);
+      }
+    });
+}
 
 function renderSetup() {
   document.getElementById('setup-section').style.display = '';
@@ -41,8 +62,7 @@ function renderSetup() {
     { key: 'hard', label: 'Hard' },
     { key: 'very hard', label: 'Very Hard' }
   ];
-  let formHtml = '<form id="quiz-setup-form">';
-  formHtml += '<h2>Select Difficulty and Number of Questions</h2>';
+  let formHtml = '<h2>Select Difficulty and Number of Questions</h2>';
   difficulties.forEach(diff => {
     formHtml += `
       <label>
@@ -53,8 +73,7 @@ function renderSetup() {
     `;
   });
   formHtml += '<button type="submit">Generate Quiz</button>';
-  formHtml += '</form>';
-  document.getElementById('quiz-setup-form').outerHTML = formHtml;
+  document.getElementById('quiz-setup-form').innerHTML = formHtml;
 
   // Enable/disable number input based on checkbox
   difficulties.forEach(diff => {
@@ -67,7 +86,8 @@ function renderSetup() {
   });
 
   // Form submit handler
-  document.getElementById('quiz-setup-form').onsubmit = function(e) {
+  const form = document.getElementById('quiz-setup-form');
+  form.onsubmit = function(e) {
     e.preventDefault();
     // Gather selected difficulties and question counts
     quizState.selectedDifficulties = [];

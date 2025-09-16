@@ -40,6 +40,15 @@ button:hover {
 label {
   display: block;
   margin: 0.5rem 0 0.2rem 0;
+  font-weight: bold;
+}
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  transform: scale(1.2);
+}
+input[type="number"] {
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 .choices {
   display: flex;
@@ -87,6 +96,15 @@ label {
   background: #0072c6;
   height: 100%;
   transition: width 0.3s;
+}
+/* Error banner */
+.error {
+  background: #fdecea;
+  color: #611a15;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
 }
 @media (max-width: 600px) {
   main {
