@@ -370,7 +370,7 @@
         { "id": 3, "choicetext": "Excess project documentation", "iscorrect": false },
         { "id": 4, "choicetext": "Reduced project flexibility", "iscorrect": false }
       ],
-      "Explenation": "Hybrid approaches may cause confusion if teams aren’t clear on collaboration, standards, and metrics. (PMBOK Guide, Agile Practice Guide, Hybrid Methods)."
+      "Explenation": "Hybrid approaches may cause confusion if teams aren't clear on collaboration, standards, and metrics. (PMBOK Guide, Agile Practice Guide, Hybrid Methods)."
     },
     {
       "qid": 32,
@@ -747,7 +747,7 @@
     {
       "qid": 63,
       "difficulty": "very hard",
-      "QuestionText": "In resource-constrained scheduling, how does the Critical Chain method address uncertainty and what buffers are integrated to protect the project schedule?",
+      "QuestionText": "In resource-constrained scheduling, how does Critical Chain method address uncertainty and what buffers are integrated to protect the project schedule?",
       "Choices": [
         { "id": 1, "choicetext": "By focusing on resource availability, it adds feeding buffers and a project buffer to absorb delays", "iscorrect": true },
         { "id": 2, "choicetext": "By overlapping activities aggressively, it increases float on non-critical paths", "iscorrect": false },
@@ -771,7 +771,7 @@
     {
       "qid": 65,
       "difficulty": "very hard",
-      "QuestionText": "In earned value management, if the Schedule Performance Index (SPI) is greater than 1 but the Cost Performance Index (CPI) is less than 1, what is the project’s condition and what corrective action should be prioritized?",
+      "QuestionText": "In earned value management, if the Schedule Performance Index (SPI) is greater than 1 but the Cost Performance Index (CPI) is less than 1, what is the project's condition and what corrective action should be prioritized?",
       "Choices": [
         { "id": 1, "choicetext": "The project is ahead of schedule but over budget; focus on cost control measures", "iscorrect": true },
         { "id": 2, "choicetext": "The project is behind schedule and under budget; accelerate activities", "iscorrect": false },
@@ -1259,6 +1259,906 @@
         { "id": 4, "choicetext": "Plan Resource Management", "iscorrect": false }
       ],
       "Explenation": "Acquire Resources involves obtaining the team members, equipment, and materials necessary to perform the work (PMBOK Guide, Section 9.4)."
+    },
+    {
+      "qid": 106,
+      "difficulty": "normal",
+      "QuestionText": "What is the primary output of the 'Develop Project Management Plan' process?",
+      "Choices": [
+        { "id": 1, "choicetext": "Project Management Plan", "iscorrect": true },
+        { "id": 2, "choicetext": "Scope Statement", "iscorrect": false },
+        { "id": 3, "choicetext": "Risk Register", "iscorrect": false },
+        { "id": 4, "choicetext": "Stakeholder Register", "iscorrect": false }
+      ],
+      "Explenation": "The Project Management Plan is the primary output and integrates all subsidiary plans and baselines (PMBOK Guide, Section 4.2)."
+    },
+    {
+      "qid": 107,
+      "difficulty": "normal",
+      "QuestionText": "Which technique is commonly used to identify project risks by eliciting ideas from multiple stakeholders?",
+      "Choices": [
+        { "id": 1, "choicetext": "Brainstorming", "iscorrect": true },
+        { "id": 2, "choicetext": "Monte Carlo Simulation", "iscorrect": false },
+        { "id": 3, "choicetext": "Critical Path Method", "iscorrect": false },
+        { "id": 4, "choicetext": "Work Breakdown Structure", "iscorrect": false }
+      ],
+      "Explenation": "Brainstorming is used to gather diverse risk identification ideas from stakeholders and experts (PMBOK Guide, Section 11.2)."
+    },
+    {
+      "qid": 108,
+      "difficulty": "normal",
+      "QuestionText": "In project schedule management, what is the significance of the critical path?",
+      "Choices": [
+        { "id": 1, "choicetext": "It's the longest path through the project with zero float, determining the shortest duration", "iscorrect": true },
+        { "id": 2, "choicetext": "It represents the most expensive project activities", "iscorrect": false },
+        { "id": 3, "choicetext": "It identifies the project risks", "iscorrect": false },
+        { "id": 4, "choicetext": "It's the sequence with the highest resource usage", "iscorrect": false }
+      ],
+      "Explenation": "The critical path defines the minimum project duration and highlights tasks that cannot be delayed without affecting the project completion date (PMBOK Guide, Section 6.3)."
+    },
+    {
+      "qid": 109,
+      "difficulty": "normal",
+      "QuestionText": "What are the three key dimensions that describe project constraints?",
+      "Choices": [
+        { "id": 1, "choicetext": "Scope, Time, and Cost", "iscorrect": true },
+        { "id": 2, "choicetext": "Quality, Resources, and Stakeholders", "iscorrect": false },
+        { "id": 3, "choicetext": "Procurement, Communications, and Risks", "iscorrect": false },
+        { "id": 4, "choicetext": "Schedule, Quality, and Benefits", "iscorrect": false }
+      ],
+      "Explenation": "Scope, time (schedule), and cost form the classic 'triple constraints' that define project limits and success parameters (PMBOK Guide, Section 1.7)."
+    },
+    {
+      "qid": 110,
+      "difficulty": "normal",
+      "QuestionText": "Which of the following best describes the 'Work Breakdown Structure Dictionary'?",
+      "Choices": [
+        { "id": 1, "choicetext": "A companion document providing detailed descriptions and information for each WBS component", "iscorrect": true },
+        { "id": 2, "choicetext": "A list of project deliverables", "iscorrect": false },
+        { "id": 3, "choicetext": "A subset of the Risk Register", "iscorrect": false },
+        { "id": 4, "choicetext": "A summary of stakeholder requirements", "iscorrect": false }
+      ],
+      "Explenation": "The WBS dictionary augments the WBS by providing detailed info about work packages, such as descriptions, responsible parties, and schedule estimates (PMBOK Guide, Section 5.4)."
+    },
+    {
+      "qid": 111,
+      "difficulty": "normal",
+      "QuestionText": "What is the primary objective of the 'Perform Integrated Change Control' process?",
+      "Choices": [
+        { "id": 1, "choicetext": "To review and approve or reject change requests to maintain control over the project baselines", "iscorrect": true },
+        { "id": 2, "choicetext": "To decomposes project deliverables", "iscorrect": false },
+        { "id": 3, "choicetext": "To acquire project resources", "iscorrect": false },
+        { "id": 4, "choicetext": "To validate the completed scope", "iscorrect": false }
+      ],
+      "Explenation": "Integrated Change Control ensures that changes are processed properly and baselines are updated accordingly to control scope, cost, and schedule (PMBOK Guide, Section 4.6)."
+    },
+    {
+      "qid": 112,
+      "difficulty": "normal",
+      "QuestionText": "Which contract type allocates the most risk to the seller?",
+      "Choices": [
+        { "id": 1, "choicetext": "Firm Fixed Price (FFP)", "iscorrect": true },
+        { "id": 2, "choicetext": "Cost Plus Fixed Fee (CPFF)", "iscorrect": false },
+        { "id": 3, "choicetext": "Time and Materials (T&M)", "iscorrect": false },
+        { "id": 4, "choicetext": "Cost Plus Incentive Fee (CPIF)", "iscorrect": false }
+      ],
+      "Explenation": "In FFP contracts, the seller bears the risk of cost overruns since the price is fixed (PMBOK Guide, Section 12.1)."
+    },
+    {
+      "qid": 113,
+      "difficulty": "normal",
+      "QuestionText": "During qualitative risk analysis, which matrix is most commonly used to prioritize risks?",
+      "Choices": [
+        { "id": 1, "choicetext": "Probability and Impact Matrix", "iscorrect": true },
+        { "id": 2, "choicetext": "Pareto Chart", "iscorrect": false },
+        { "id": 3, "choicetext": "Fishbone Diagram", "iscorrect": false },
+        { "id": 4, "choicetext": "Control Chart", "iscorrect": false }
+      ],
+      "Explenation": "The Probability and Impact Matrix helps rank risks based on their likelihood and potential impact (PMBOK Guide, Section 11.3)."
+    },
+    {
+      "qid": 114,
+      "difficulty": "normal",
+      "QuestionText": "What does the 'Critical Chain Method' focus on when planning schedules?",
+      "Choices": [
+        { "id": 1, "choicetext": "Resource constraints and buffers to protect the project end date", "iscorrect": true },
+        { "id": 2, "choicetext": "Fast tracking activities", "iscorrect": false },
+        { "id": 3, "choicetext": "Risk mitigation", "iscorrect": false },
+        { "id": 4, "choicetext": "Cost control", "iscorrect": false }
+      ],
+      "Explenation": "Critical Chain Method accounts for resource availability and adds buffers to deal with uncertainties (PMBOK Guide, Section 6.6)."
+    },
+    {
+      "qid": 115,
+      "difficulty": "normal",
+      "QuestionText": "During risk response planning, which technique is used to allocate ownership and responsibility for managing specific risks?",
+      "Choices": [
+        { "id": 1, "choicetext": "Assigning Risk Owners", "iscorrect": true },
+        { "id": 2, "choicetext": "Qualitative Risk Analysis", "iscorrect": false },
+        { "id": 3, "choicetext": "Monte Carlo Analysis", "iscorrect": false },
+        { "id": 4, "choicetext": "Variance Analysis", "iscorrect": false }
+      ],
+      "Explenation": "Risk Owners are individuals assigned to monitor and manage specific risks (PMBOK Guide, Section 11.5)."
+    },
+    {
+      "qid": 116,
+      "difficulty": "normal",
+      "QuestionText": "What is the key benefit of the 'Develop Team' process?",
+      "Choices": [
+        { "id": 1, "choicetext": "Improved team competencies, interaction, and overall project performance", "iscorrect": true },
+        { "id": 2, "choicetext": "Decreased project budget", "iscorrect": false },
+        { "id": 3, "choicetext": "Reduced schedule duration", "iscorrect": false },
+        { "id": 4, "choicetext": "Production of the project charter", "iscorrect": false }
+      ],
+      "Explenation": "'Develop Team' enhances project team skills and collaboration to improve project outcomes (PMBOK Guide, Section 9.4)."
+    },
+    {
+      "qid": 117,
+      "difficulty": "normal",
+      "QuestionText": "What is a key output of the 'Estimate Costs' process?",
+      "Choices": [
+        { "id": 1, "choicetext": "Cost estimates for project activities or work packages", "iscorrect": true },
+        { "id": 2, "choicetext": "Risk triggers", "iscorrect": false },
+        { "id": 3, "choicetext": "Communications plan", "iscorrect": false },
+        { "id": 4, "choicetext": "Project schedule", "iscorrect": false }
+      ],
+      "Explenation": "Estimate Costs produces cost estimates used in budgeting and controlling project costs (PMBOK Guide, Section 7.2)."
+    },
+    {
+      "qid": 118,
+      "difficulty": "normal",
+      "QuestionText": "Which measurement technique provides a forecast of project cost at completion based on current performance trends?",
+      "Choices": [
+        { "id": 1, "choicetext": "Estimate at Completion (EAC)", "iscorrect": true },
+        { "id": 2, "choicetext": "Schedule Performance Index (SPI)", "iscorrect": false },
+        { "id": 3, "choicetext": "Budget at Completion (BAC)", "iscorrect": false },
+        { "id": 4, "choicetext": "Plan-Do-Check-Act", "iscorrect": false }
+      ],
+      "Explenation": "The EAC forecasts the expected total cost based on performance indices and trends (PMBOK Guide, Section 7.4)."
+    },
+    {
+      "qid": 119,
+      "difficulty": "normal",
+      "QuestionText": "What is the main purpose of the 'Manage Stakeholder Engagement' process?",
+      "Choices": [
+        { "id": 1, "choicetext": "To work with stakeholders to meet their needs and address issues as the project progresses", "iscorrect": true },
+        { "id": 2, "choicetext": "To identify stakeholders", "iscorrect": false },
+        { "id": 3, "choicetext": "To plan communication methods", "iscorrect": false },
+        { "id": 4, "choicetext": "To schedule stakeholder meetings", "iscorrect": false }
+      ],
+      "Explenation": "Manage Stakeholder Engagement is focused on interaction, communication, and resolving stakeholder concerns (PMBOK Guide, Section 13.3)."
+    },
+    {
+      "qid": 120,
+      "difficulty": "normal",
+      "QuestionText": "During project procurement, what is the purpose of a 'bidder conference'?",
+      "Choices": [
+        { "id": 1, "choicetext": "To clarify project requirements and procurement details to potential sellers", "iscorrect": true },
+        { "id": 2, "choicetext": "To finalize contracts", "iscorrect": false },
+        { "id": 3, "choicetext": "To negotiate schedule changes", "iscorrect": false },
+        { "id": 4, "choicetext": "To assess team performance", "iscorrect": false }
+      ],
+      "Explenation": "Bidder conferences help ensure prospective sellers fully understand the procurement expectations (PMBOK Guide, Section 12.1)."
+    },
+    {
+      "qid": 121,
+      "difficulty": "normal",
+      "QuestionText": "What does 'progressive elaboration' mean in project management?",
+      "Choices": [
+        { "id": 1, "choicetext": "Developing detail as more information becomes available", "iscorrect": true },
+        { "id": 2, "choicetext": "Completing the entire plan in detail at the start", "iscorrect": false },
+        { "id": 3, "choicetext": "Fixing processes after delivery", "iscorrect": false },
+        { "id": 4, "choicetext": "Integrating deliverables sequentially", "iscorrect": false }
+      ],
+      "Explenation": "Progressive elaboration means continuously improving and detailing plans as the project evolves (PMBOK Guide, Section 1.2)."
+    },
+    {
+      "qid": 122,
+      "difficulty": "normal",
+      "QuestionText": "Which process involves reviewing work results to ensure they meet the project requirements and quality standards?",
+      "Choices": [
+        { "id": 1, "choicetext": "Control Quality", "iscorrect": true },
+        { "id": 2, "choicetext": "Plan Quality Management", "iscorrect": false },
+        { "id": 3, "choicetext": "Identify Risks", "iscorrect": false },
+        { "id": 4, "choicetext": "Develop Schedule", "iscorrect": false }
+      ],
+      "Explenation": "Control Quality verifies that deliverables meet quality specifications through inspection and testing (PMBOK Guide, Section 8.3)."
+    },
+    {
+      "qid": 123,
+      "difficulty": "normal",
+      "QuestionText": "What is a 'Work Package' in project management?",
+      "Choices": [
+        { "id": 1, "choicetext": "The lowest level of the WBS that can be assigned and estimated", "iscorrect": true },
+        { "id": 2, "choicetext": "The final deliverable", "iscorrect": false },
+        { "id": 3, "choicetext": "A risk register item", "iscorrect": false },
+        { "id": 4, "choicetext": "A milestone", "iscorrect": false }
+      ],
+      "Explenation": "A Work Package is the smallest unit of work in the WBS, suitable for estimation and assignment (PMBOK Guide, Section 5.4)."
+    },
+    {
+      "qid": 124,
+      "difficulty": "normal",
+      "QuestionText": "Which tool is used to understand potential causes of quality problems?",
+      "Choices": [
+        { "id": 1, "choicetext": "Fishbone diagram (cause-and-effect diagram)", "iscorrect": true },
+        { "id": 2, "choicetext": "Stakeholder Register", "iscorrect": false },
+        { "id": 3, "choicetext": "Work Breakdown Structure", "iscorrect": false },
+        { "id": 4, "choicetext": "RACI matrix", "iscorrect": false }
+      ],
+      "Explenation": "A fishbone diagram helps identify root causes of defects or problems (PMBOK Guide, Section 8.2)."
+    },
+    {
+      "qid": 125,
+      "difficulty": "normal",
+      "QuestionText": "When is the project schedule baseline established?",
+      "Choices": [
+        { "id": 1, "choicetext": "After the project schedule is developed and approved", "iscorrect": true },
+        { "id": 2, "choicetext": "During project initiation", "iscorrect": false },
+        { "id": 3, "choicetext": "After project closure", "iscorrect": false },
+        { "id": 4, "choicetext": "Before risk identification", "iscorrect": false }
+      ],
+      "Explenation": "The schedule baseline is established upon approval of the developed project schedule (PMBOK Guide, Section 6.5)."
+    },
+    {
+      "qid": 126,
+      "difficulty": "normal",
+      "QuestionText": "What is the key output of the 'Identify Stakeholders' process?",
+      "Choices": [
+        { "id": 1, "choicetext": "Stakeholder Register", "iscorrect": true },
+        { "id": 2, "choicetext": "Risk Register", "iscorrect": false },
+        { "id": 3, "choicetext": "Change Log", "iscorrect": false },
+        { "id": 4, "choicetext": "Project Charter", "iscorrect": false }
+      ],
+      "Explenation": "The Stakeholder Register is the outcome of identifying stakeholders and contains stakeholder details (PMBOK Guide, Section 13.1)."
+    },
+    {
+      "qid": 127,
+      "difficulty": "normal",
+      "QuestionText": "What technique is used to estimate project costs based on historical data from similar projects?",
+      "Choices": [
+        { "id": 1, "choicetext": "Analogous estimating", "iscorrect": true },
+        { "id": 2, "choicetext": "Parametric estimating", "iscorrect": false },
+        { "id": 3, "choicetext": "Bottom-up estimating", "iscorrect": false },
+        { "id": 4, "choicetext": "Three-point estimating", "iscorrect": false }
+      ],
+      "Explenation": "Analogous estimating relies on previous project data for similar scope to estimate costs (PMBOK Guide, Section 7.2)."
+    },
+    {
+      "qid": 128,
+      "difficulty": "normal",
+      "QuestionText": "What is the primary role of the Project Management Office (PMO) in an organization?",
+      "Choices": [
+        { "id": 1, "choicetext": "Standardize project management practices and provide support", "iscorrect": true },
+        { "id": 2, "choicetext": "Sign contracts with vendors", "iscorrect": false },
+        { "id": 3, "choicetext": "Manage company finances", "iscorrect": false },
+        { "id": 4, "choicetext": "Perform quality inspections", "iscorrect": false }
+      ],
+      "Explenation": "The PMO helps implement consistent project management processes and supports project teams (PMBOK Guide, Section 1.4)."
+    },
+    {
+      "qid": 129,
+      "difficulty": "normal",
+      "QuestionText": "Which of the following is a tool or technique for the 'Develop Schedule' process?",
+      "Choices": [
+        { "id": 1, "choicetext": "Critical Path Method", "iscorrect": true },
+        { "id": 2, "choicetext": "Risk Register", "iscorrect": false },
+        { "id": 3, "choicetext": "Iterative Planning", "iscorrect": false },
+        { "id": 4, "choicetext": "Proposed Budget", "iscorrect": false }
+      ],
+      "Explenation": "Critical Path Method is used to analyze sequences, durations, and dependencies to develop the schedule (PMBOK Guide, Section 6.3)."
+    },
+    {
+      "qid": 130,
+      "difficulty": "normal",
+      "QuestionText": "What is the definition of 'earned value' in earned value management (EVM)?",
+      "Choices": [
+        { "id": 1, "choicetext": "The value of work actually completed expressed in budgeted cost terms", "iscorrect": true },
+        { "id": 2, "choicetext": "The original budget planned for the project", "iscorrect": false },
+        { "id": 3, "choicetext": "The total actual cost incurred for work performed", "iscorrect": false },
+        { "id": 4, "choicetext": "The forecasted cost to complete remaining work", "iscorrect": false }
+      ],
+      "Explenation": "Earned value represents the budgeted value of work completed at a point in time (PMBOK Guide, Section 7.4)."
+    },
+    {
+      "qid": 131,
+      "difficulty": "hard",
+      "QuestionText": "When performing a quantitative risk analysis, a project manager uses a Monte Carlo simulation. What is the primary assumption of this technique that affects its accuracy?",
+      "Choices": [
+        { "id": 1, "choicetext": "Probability distributions used for input variables are accurate reflections of real-world variability", "iscorrect": true },
+        { "id": 2, "choicetext": "All risks are independent and do not influence each other", "iscorrect": false },
+        { "id": 3, "choicetext": "Risk events only occur sequentially and not concurrently", "iscorrect": false },
+        { "id": 4, "choicetext": "Monte Carlo simulation removes the need for qualitative risk analysis", "iscorrect": false }
+      ],
+      "Explenation": "Monte Carlo simulation depends on accurate input probability distributions to model uncertainty realistically. Inaccurate inputs lead to unreliable forecasts (PMBOK Guide, Section 11.4)."
+    },
+    {
+      "qid": 132,
+      "difficulty": "hard",
+      "QuestionText": "In the context of project schedule management, how does Critical Chain Scheduling differ from Critical Path Method?",
+      "Choices": [
+        { "id": 1, "choicetext": "It incorporates resource constraints and adds buffer times to protect the schedule", "iscorrect": true },
+        { "id": 2, "choicetext": "It focuses solely on task dependencies and durations", "iscorrect": false },
+        { "id": 3, "choicetext": "It eliminates the concept of float", "iscorrect": false },
+        { "id": 4, "choicetext": "It does not account for risks", "iscorrect": false }
+      ],
+      "Explenation": "Critical Chain focuses on resources and uses buffers to manage uncertainties, whereas Critical Path Method focuses on tasks and their dependencies (PMBOK Guide, Section 6.6)."
+    },
+    {
+      "qid": 133,
+      "difficulty": "hard",
+      "QuestionText": "A project uses a Cost Plus Incentive Fee (CPIF) contract. Which statement best explains the financial risk allocation of this contract type?",
+      "Choices": [
+        { "id": 1, "choicetext": "Seller is rewarded or penalized based on cost control performance, sharing risk with buyer", "iscorrect": true },
+        { "id": 2, "choicetext": "Buyer bears all cost overrun risks regardless of seller performance", "iscorrect": false },
+        { "id": 3, "choicetext": "Seller has no cost risk; the fee is fixed", "iscorrect": false },
+        { "id": 4, "choicetext": "Seller is paid a lump sum regardless of costs", "iscorrect": false }
+      ],
+      "Explenation": "CPIF contracts incentivize sellers to control costs by sharing savings or overruns per formula agreed upon (PMBOK Guide, Section 12.1)."
+    },
+    {
+      "qid": 134,
+      "difficulty": "hard",
+      "QuestionText": "During a project, new regulatory requirements emerge impacting design deliverables. Which project management process should address this change and how?",
+      "Choices": [
+        { "id": 1, "choicetext": "Perform Integrated Change Control process to evaluate and approve modifications to the project baselines", "iscorrect": true },
+        { "id": 2, "choicetext": "Validate Scope process to accept modified deliverables", "iscorrect": false },
+        { "id": 3, "choicetext": "Plan Quality Management to ensure compliance", "iscorrect": false },
+        { "id": 4, "choicetext": "Identify Risks process to add regulatory risks", "iscorrect": false }
+      ],
+      "Explenation": "Integrated Change Control manages evaluation and approval of changes impacting scope, schedule, or cost due to external factors like regulations (PMBOK Guide, Section 4.6)."
+    },
+    {
+      "qid": 135,
+      "difficulty": "hard",
+      "QuestionText": "Which tool in stakeholder analysis helps identify stakeholders' levels of influence and interest to optimize communication strategy?",
+      "Choices": [
+        { "id": 1, "choicetext": "Power/Interest Grid", "iscorrect": true },
+        { "id": 2, "choicetext": "SWOT Analysis", "iscorrect": false },
+        { "id": 3, "choicetext": "RACI Chart", "iscorrect": false },
+        { "id": 4, "choicetext": "Pareto Chart", "iscorrect": false }
+      ],
+      "Explenation": "The Power/Interest Grid categorizes stakeholders to tailor engagement and communication plans effectively (PMBOK Guide, Section 13.2)."
+    },
+    {
+      "qid": 136,
+      "difficulty": "hard",
+      "QuestionText": "What is the main purpose of the configuration management system in project integration management?",
+      "Choices": [
+        { "id": 1, "choicetext": "To document and control changes to project deliverables and baselines", "iscorrect": true },
+        { "id": 2, "choicetext": "To manage project budgets", "iscorrect": false },
+        { "id": 3, "choicetext": "To schedule project activities", "iscorrect": false },
+        { "id": 4, "choicetext": "To allocate resources", "iscorrect": false }
+      ],
+      "Explenation": "Configuration management tracks and controls changes ensuring project deliverables remain consistent and traceable (PMBOK Guide, Section 4.6)."
+    },
+    {
+      "qid": 137,
+      "difficulty": "hard",
+      "QuestionText": "In quantitative risk analysis, what is the significance of expected monetary value (EMV), and how is it calculated?",
+      "Choices": [
+        { "id": 1, "choicetext": "EMV quantifies risk impact in monetary terms by multiplying probability by impact for each risk and summing them", "iscorrect": true },
+        { "id": 2, "choicetext": "EMV measures stakeholder satisfaction", "iscorrect": false },
+        { "id": 3, "choicetext": "EMV is used to estimate procurement costs", "iscorrect": false },
+        { "id": 4, "choicetext": "EMV discounts future cash flows", "iscorrect": false }
+      ],
+      "Explenation": "EMV helps in decision-making by computing weighted average financial impact of risks (PMBOK Guide, Section 11.4)."
+    },
+    {
+      "qid": 138,
+      "difficulty": "hard",
+      "QuestionText": "How can rolling wave planning be effectively used in managing highly uncertain project environments?",
+      "Choices": [
+        { "id": 1, "choicetext": "By planning near-term work in detail and planning future work at a higher level, updating progressively", "iscorrect": true },
+        { "id": 2, "choicetext": "By completing detailed scheduling for the entire project at once", "iscorrect": false },
+        { "id": 3, "choicetext": "By delaying all planning until requirements are fully defined", "iscorrect": false },
+        { "id": 4, "choicetext": "By focusing only on resource leveling", "iscorrect": false }
+      ],
+      "Explenation": "Rolling wave planning allows refining plans as more information becomes available, suitable for uncertain environments (PMBOK Guide, Section 6.2)."
+    },
+    {
+      "qid": 139,
+      "difficulty": "hard",
+      "QuestionText": "Which contract type combines fixed price with variable incentives to align buyer and seller interests in cost and schedule performance?",
+      "Choices": [
+        { "id": 1, "choicetext": "Cost Plus Incentive Fee (CPIF)", "iscorrect": true },
+        { "id": 2, "choicetext": "Firm Fixed Price (FFP)", "iscorrect": false },
+        { "id": 3, "choicetext": "Cost Plus Fixed Fee (CPFF)", "iscorrect": false },
+        { "id": 4, "choicetext": "Time and Materials (T&M)", "iscorrect": false }
+      ],
+      "Explenation": "CPIF contracts share risks by offering incentives based on meeting cost/schedule targets (PMBOK Guide, Section 12.1)."
+    },
+    {
+      "qid": 140,
+      "difficulty": "hard",
+      "QuestionText": "What are the main components of a project's risk response plan?",
+      "Choices": [
+        { "id": 1, "choicetext": "Strategies, actions, risk owners, and triggers for identified risks", "iscorrect": true },
+        { "id": 2, "choicetext": "Schedule, cost, and quality baselines", "iscorrect": false },
+        { "id": 3, "choicetext": "Stakeholder engagement levels and communication channels", "iscorrect": false },
+        { "id": 4, "choicetext": "Resource assignment and procurement methods", "iscorrect": false }
+      ],
+      "Explenation": "The risk response plan details what is to be done, who is responsible, and when action should occur (PMBOK Guide, Section 11.5)."
+    },
+    {
+      "qid": 141,
+      "difficulty": "hard",
+      "QuestionText": "A project manager observes a cost performance index (CPI) of 0.85. What does this indicate, and what action should be considered?",
+      "Choices": [
+        { "id": 1, "choicetext": "Project is over budget; cost control and corrective measures should be evaluated", "iscorrect": true },
+        { "id": 2, "choicetext": "Project is under budget; consider increasing scope", "iscorrect": false },
+        { "id": 3, "choicetext": "Project is behind schedule; accelerate timelines", "iscorrect": false },
+        { "id": 4, "choicetext": "Project is on target; no action needed", "iscorrect": false }
+      ],
+      "Explenation": "CPI less than 1 indicates higher actual costs than planned, signaling a need for cost control (PMBOK Guide, Section 7.4)."
+    },
+    {
+      "qid": 142,
+      "difficulty": "hard",
+      "QuestionText": "Which stakeholder engagement strategy is most appropriate when a stakeholder currently shows low support but has high influence on project success?",
+      "Choices": [
+        { "id": 1, "choicetext": "Manage closely by actively involving and collaborating", "iscorrect": true },
+        { "id": 2, "choicetext": "Monitor passively with minimal communication", "iscorrect": false },
+        { "id": 3, "choicetext": "Keep informed with general updates", "iscorrect": false },
+        { "id": 4, "choicetext": "Ignore to avoid conflict", "iscorrect": false }
+      ],
+      "Explenation": "Highly influential but unsupportive stakeholders require active engagement to increase support (PMBOK Guide, Section 13.3)."
+    },
+    {
+      "qid": 143,
+      "difficulty": "hard",
+      "QuestionText": "What is the primary purpose of a Pareto chart in quality management?",
+      "Choices": [
+        { "id": 1, "choicetext": "To identify the most significant causes among many contributing factors", "iscorrect": true },
+        { "id": 2, "choicetext": "To display project schedule data visually", "iscorrect": false },
+        { "id": 3, "choicetext": "To assess stakeholder influence", "iscorrect": false },
+        { "id": 4, "choicetext": "To list procurement risks", "iscorrect": false }
+      ],
+      "Explenation": "Pareto charts highlight the vital few problems causing the majority of defects (PMBOK Guide, Section 8.3)."
+    },
+    {
+      "qid": 144,
+      "difficulty": "hard",
+      "QuestionText": "When performing resource leveling, what is the primary effect on the project schedule?",
+      "Choices": [
+        { "id": 1, "choicetext": "Potential extension of project duration to resolve resource conflicts", "iscorrect": true },
+        { "id": 2, "choicetext": "Shortening the project schedule", "iscorrect": false },
+        { "id": 3, "choicetext": "Acceleration of the critical path", "iscorrect": false },
+        { "id": 4, "choicetext": "Elimination of all project risks", "iscorrect": false }
+      ],
+      "Explenation": "Resource leveling adjusts the schedule to prevent over-allocation which may increase overall project duration (PMBOK Guide, Section 6.6)."
+    },
+    {
+      "qid": 145,
+      "difficulty": "hard",
+      "QuestionText": "Which integrated process is responsible for updating the project management plan and project documents after a change is approved?",
+      "Choices": [
+        { "id": 1, "choicetext": "Perform Integrated Change Control", "iscorrect": true },
+        { "id": 2, "choicetext": "Develop Project Charter", "iscorrect": false },
+        { "id": 3, "choicetext": "Monitor Communications", "iscorrect": false },
+        { "id": 4, "choicetext": "Validate Scope", "iscorrect": false }
+      ],
+      "Explenation": "Perform Integrated Change Control oversees change approval and updates related plans and documents accordingly (PMBOK Guide, Section 4.6)."
+    },
+    {
+      "qid": 146,
+      "difficulty": "hard",
+      "QuestionText": "What is the advantage of using parametric estimating in cost estimation?",
+      "Choices": [
+        { "id": 1, "choicetext": "It uses statistical relationships between historical data and variables to improve accuracy", "iscorrect": true },
+        { "id": 2, "choicetext": "It is always more conservative than bottom-up estimating", "iscorrect": false },
+        { "id": 3, "choicetext": "It ignores variations in resource productivity", "iscorrect": false },
+        { "id": 4, "choicetext": "It is qualitative in nature", "iscorrect": false }
+      ],
+      "Explenation": "Parametric estimating applies statistical models based on historical data to calculate estimates efficiently (PMBOK Guide, Section 7.2)."
+    },
+    {
+      "qid": 147,
+      "difficulty": "hard",
+      "QuestionText": "Which method is most effective in resolving conflicts in a project team?",
+      "Choices": [
+        { "id": 1, "choicetext": "Collaborating to find a win-win solution", "iscorrect": true },
+        { "id": 2, "choicetext": "Avoiding the conflict", "iscorrect": false },
+        { "id": 3, "choicetext": "Accommodating the other party", "iscorrect": false },
+        { "id": 4, "choicetext": "Competing to assert authority", "iscorrect": false }
+      ],
+      "Explenation": "Collaborating attempts to satisfy all parties and leads to sustainable resolutions (PMBOK Guide, Section 9.4)."
+    },
+    {
+      "qid": 148,
+      "difficulty": "hard",
+      "QuestionText": "During the Plan Communications Management process, which input is essential to understanding stakeholder communication requirements?",
+      "Choices": [
+        { "id": 1, "choicetext": "Stakeholder Register", "iscorrect": true },
+        { "id": 2, "choicetext": "Risk Register", "iscorrect": false },
+        { "id": 3, "choicetext": "Procurement Documents", "iscorrect": false },
+        { "id": 4, "choicetext": "Quality Metrics", "iscorrect": false }
+      ],
+      "Explenation": "The Stakeholder Register provides information about stakeholder communication needs (PMBOK Guide, Section 10.1)."
+    },
+    {
+      "qid": 149,
+      "difficulty": "hard",
+      "QuestionText": "What type of analysis helps determine the effect of multiple risks acting simultaneously on project objectives?",
+      "Choices": [
+        { "id": 1, "choicetext": "Monte Carlo Simulation (Quantitative Risk Analysis)", "iscorrect": true },
+        { "id": 2, "choicetext": "Root Cause Analysis", "iscorrect": false },
+        { "id": 3, "choicetext": "SWOT Analysis", "iscorrect": false },
+        { "id": 4, "choicetext": "Earned Value Analysis", "iscorrect": false }
+      ],
+      "Explenation": "Monte Carlo simulation models combined impacts of multiple risks on cost and schedule (PMBOK Guide, Section 11.4)."
+    },
+    {
+      "qid": 150,
+      "difficulty": "hard",
+      "QuestionText": "Which of the following is an outcome of the Monitor Risks process?",
+      "Choices": [
+        { "id": 1, "choicetext": "Risk reassessments and updates to risk register and risk response plans", "iscorrect": true },
+        { "id": 2, "choicetext": "Project schedule baseline", "iscorrect": false },
+        { "id": 3, "choicetext": "Stakeholder engagement assessments", "iscorrect": false },
+        { "id": 4, "choicetext": "Cost forecasts", "iscorrect": false }
+      ],
+      "Explenation": "Monitor Risks involves tracking identified risks, identifying new risks, and evaluating risk process effectiveness (PMBOK Guide, Section 11.7)."
+    },
+    {
+      "qid": 151,
+      "difficulty": "hard",
+      "QuestionText": "Which of these scheduling compression techniques involves adding resources to shorten project duration, and what is its potential downside?",
+      "Choices": [
+        { "id": 1, "choicetext": "Crashing; it can increase project costs and risks", "iscorrect": true },
+        { "id": 2, "choicetext": "Fast Tracking; it always reduces costs", "iscorrect": false },
+        { "id": 3, "choicetext": "Resource leveling; it decreases float", "iscorrect": false },
+        { "id": 4, "choicetext": "Critical chain scheduling; it eliminates buffers", "iscorrect": false }
+      ],
+      "Explenation": "Crashing shortens the schedule by adding resources but may increase costs and risk of errors (PMBOK Guide, Section 6.6)."
+    },
+    {
+      "qid": 152,
+      "difficulty": "hard",
+      "QuestionText": "Which of the following is a key input in the 'Control Procurements' process?",
+      "Choices": [
+        { "id": 1, "choicetext": "Procurement contracts and seller performance reports", "iscorrect": true },
+        { "id": 2, "choicetext": "Project schedule", "iscorrect": false },
+        { "id": 3, "choicetext": "Stakeholder Register", "iscorrect": false },
+        { "id": 4, "choicetext": "Quality Metrics", "iscorrect": false }
+      ],
+      "Explenation": "Control Procurements monitors contract performance using contracts and seller performance data (PMBOK Guide, Section 12.3)."
+    },
+    {
+      "qid": 153,
+      "difficulty": "hard",
+      "QuestionText": "In Earned Value Management, what does a Schedule Variance (SV) of 0 indicate?",
+      "Choices": [
+        { "id": 1, "choicetext": "Project work is exactly on schedule", "iscorrect": true },
+        { "id": 2, "choicetext": "Project is behind schedule", "iscorrect": false },
+        { "id": 3, "choicetext": "Project is ahead of schedule", "iscorrect": false },
+        { "id": 4, "choicetext": "Project has cost overruns", "iscorrect": false }
+      ],
+      "Explenation": "An SV of zero means planned work and actual work are equal indicating the project is on schedule (PMBOK Guide, Section 7.4)."
+    },
+    {
+      "qid": 154,
+      "difficulty": "hard",
+      "QuestionText": "What process creates the schedule baseline used for monitoring and controlling project schedule?",
+      "Choices": [
+        { "id": 1, "choicetext": "Develop Schedule", "iscorrect": true },
+        { "id": 2, "choicetext": "Define Activities", "iscorrect": false },
+        { "id": 3, "choicetext": "Control Schedule", "iscorrect": false },
+        { "id": 4, "choicetext": "Sequence Activities", "iscorrect": false }
+      ],
+      "Explenation": "Develop Schedule produces the schedule baseline approved for monitoring (PMBOK Guide, Section 6.5)."
+    },
+    {
+      "qid": 155,
+      "difficulty": "hard",
+      "QuestionText": "Which is a reason why a project manager might use a RACI matrix during human resource planning?",
+      "Choices": [
+        { "id": 1, "choicetext": "To clarify roles and responsibilities across project tasks", "iscorrect": true },
+        { "id": 2, "choicetext": "To develop the project schedule", "iscorrect": false },
+        { "id": 3, "choicetext": "To estimate project costs", "iscorrect": false },
+        { "id": 4, "choicetext": "To assess risk probabilities", "iscorrect": false }
+      ],
+      "Explenation": "RACI matrices clarify who is Responsible, Accountable, Consulted, and Informed for project activities (PMBOK Guide, Section 9.2)."
+    },
+    {
+      "qid": 156,
+      "difficulty": "very hard",
+      "QuestionText": "In a multi-phase, multi-stakeholder project, a project manager is tasked with integrating diverse stakeholder requirements while maintaining scope control. Which integrated approach best balances iterative stakeholder engagement with formal change control processes?",
+      "Choices": [
+        { "id": 1, "choicetext": "Apply rolling wave planning for requirements elaboration combined with Perform Integrated Change Control for baseline governance", "iscorrect": true },
+        { "id": 2, "choicetext": "Freeze requirements after initiation and restrict stakeholder input", "iscorrect": false },
+        { "id": 3, "choicetext": "Defer all stakeholder engagement until project closure", "iscorrect": false },
+        { "id": 4, "choicetext": "Handle stakeholder requests outside of formal change processes to speed delivery", "iscorrect": false }
+      ],
+      "Explenation": "Rolling wave planning allows evolving detail for stakeholder needs, while integrated change control ensures project baselines remain controlled despite changes (PMBOK Guide, Sections 4.3 and 4.6)."
+    },
+    {
+      "qid": 157,
+      "difficulty": "very hard",
+      "QuestionText": "During a Monte Carlo simulation for project schedule risk analysis, the project manager notices unexpected results deviating significantly from historical data. What could be a primary cause and how should the manager respond to ensure validity?",
+      "Choices": [
+        { "id": 1, "choicetext": "Input probability distributions may be inaccurate; validate assumptions and consult experts to refine inputs", "iscorrect": true },
+        { "id": 2, "choicetext": "The simulation software is incompatible; replace the software immediately", "iscorrect": false },
+        { "id": 3, "choicetext": "Stakeholder engagement is low; increase team meetings", "iscorrect": false },
+        { "id": 4, "choicetext": "Risks are overcontrolled; reduce response efforts", "iscorrect": false }
+      ],
+      "Explenation": "Accuracy of Monte Carlo relies on quality input data; validating distributions and assumptions is critical before making decisions (PMBOK Guide, Section 11.4)."
+    },
+    {
+      "qid": 158,
+      "difficulty": "very hard",
+      "QuestionText": "In resource-constrained scheduling, how does Critical Chain project management mitigate delays caused by resource contention and what are the practical implications for buffer management?",
+      "Choices": [
+        { "id": 1, "choicetext": "By identifying the resource constraints along the critical chain and inserting feeding and project buffers, it mitigates resource-driven delays with monitored buffer consumption", "iscorrect": true },
+        { "id": 2, "choicetext": "By removing all float from non-critical paths", "iscorrect": false },
+        { "id": 3, "choicetext": "By ignoring resource availability to maintain schedule", "iscorrect": false },
+        { "id": 4, "choicetext": "By accelerating all activities regardless of risk", "iscorrect": false }
+      ],
+      "Explenation": "Critical Chain PM accounts for limited resources, using buffers to protect the schedule; buffer management ensures timely response to delays (PMBOK Guide, Section 6.6)."
+    },
+    {
+      "qid": 159,
+      "difficulty": "very hard",
+      "QuestionText": "When integrating Agile and predictive methodologies in a hybrid project, what key governance considerations ensure effective synchronization of delivery and control?",
+      "Choices": [
+        { "id": 1, "choicetext": "Establish a governance framework combining iterative releases with baseline control points and clear reporting metrics", "iscorrect": true },
+        { "id": 2, "choicetext": "Apply predictive plans exclusively to avoid complexity", "iscorrect": false },
+        { "id": 3, "choicetext": "Defer all contract reviews until final delivery", "iscorrect": false },
+        { "id": 4, "choicetext": "Use ad hoc decision making to maximize adaptability", "iscorrect": false }
+      ],
+      "Explenation": "Hybrid projects require governance frameworks that balance Agile flexibility with traditional control, enabling adherence to objectives while accommodating change (PMBOK Guide and Agile Practice Guide)."
+    },
+    {
+      "qid": 160,
+      "difficulty": "very hard",
+      "QuestionText": "Analyze a scenario where the project's cost performance index (CPI) is 0.8 and schedule performance index (SPI) is 1.1. What does this indicate about project health and prioritization of corrective actions?",
+      "Choices": [
+        { "id": 1, "choicetext": "The project is over budget but ahead of schedule; prioritize cost control to prevent budget overruns", "iscorrect": true },
+        { "id": 2, "choicetext": "The project is under budget and behind schedule; focus on time acceleration", "iscorrect": false },
+        { "id": 3, "choicetext": "Both cost and schedule are in control; no action needed", "iscorrect": false },
+        { "id": 4, "choicetext": "Risk management is deficient; reevaluate risks", "iscorrect": false }
+      ],
+      "Explenation": "A CPI below 1 indicates cost inefficiency; SPI above 1 indicates schedule efficiency. Cost control efforts should be emphasized (PMBOK Guide, Section 7.4)."
+    },
+    {
+      "qid": 161,
+      "difficulty": "very hard",
+      "QuestionText": "In preparing a complex procurement statement of work (SOW), what unique challenges arise in ensuring clarity and minimizing disputes, particularly for technical deliverables?",
+      "Choices": [
+        { "id": 1, "choicetext": "Precisely defining scope, acceptance criteria, technical specifications, and change control to withstand ambiguous interpretations", "iscorrect": true },
+        { "id": 2, "choicetext": "Using broad, flexible language to accommodate vendor innovation", "iscorrect": false },
+        { "id": 3, "choicetext": "Leaving acceptance testing undefined for flexibility", "iscorrect": false },
+        { "id": 4, "choicetext": "Deferring all scope details to the procurement phase", "iscorrect": false }
+      ],
+      "Explenation": "Detailed, unambiguous SOWs reduce misunderstandings and contractual risk in complex procurements (PMBOK Guide, Section 12.2)."
+    },
+    {
+      "qid": 162,
+      "difficulty": "very hard",
+      "QuestionText": "How does risk exposure differ from risk impact, and how should a project manager incorporate both into risk prioritization?",
+      "Choices": [
+        { "id": 1, "choicetext": "Risk exposure combines probability and impact; prioritization should consider both to focus on risks with significant expected effect", "iscorrect": true },
+        { "id": 2, "choicetext": "Risk exposure only considers impact; probability is irrelevant", "iscorrect": false },
+        { "id": 3, "choicetext": "Risk impact alone determines priority", "iscorrect": false },
+        { "id": 4, "choicetext": "Exposure and impact are interchangeable terms", "iscorrect": false }
+      ],
+      "Explenation": "Risk exposure is the product of probability and impact, providing a weighted measure for prioritizing mitigation efforts (PMBOK Guide, Section 11.3)."
+    },
+    {
+      "qid": 163,
+      "difficulty": "very hard",
+      "QuestionText": "How are 'feeding buffers' and 'project buffers' distinguished within Critical Chain Scheduling, and what roles do they play?",
+      "Choices": [
+        { "id": 1, "choicetext": "Feeding buffers protect non-critical paths from delaying the critical chain; project buffers protect the end date of the critical chain itself", "iscorrect": true },
+        { "id": 2, "choicetext": "Both buffers are applied only to critical path activities", "iscorrect": false },
+        { "id": 3, "choicetext": "Project buffers accelerate critical activities", "iscorrect": false },
+        { "id": 4, "choicetext": "Feeding buffers eliminate resource constraints", "iscorrect": false }
+      ],
+      "Explenation": "Feeding buffers manage delays on paths feeding into the critical chain; project buffers absorb uncertainties on the critical chain (PMBOK Guide, Section 6.6)."
+    },
+    {
+      "qid": 164,
+      "difficulty": "very hard",
+      "QuestionText": "Explain how organizational process assets and enterprise environmental factors influence tailoring decisions in project management methodology selections.",
+      "Choices": [
+        { "id": 1, "choicetext": "OPAs provide internal standards and historical info; EEFs provide cultural, legal, and market conditions that affect how processes should be adapted", "iscorrect": true },
+        { "id": 2, "choicetext": "OPAs and EEFs are unrelated to tailoring", "iscorrect": false },
+        { "id": 3, "choicetext": "Tailoring applies only to cost estimates, not organizational factors", "iscorrect": false },
+        { "id": 4, "choicetext": "Tailoring ignores EEFs to maintain process consistency", "iscorrect": false }
+      ],
+      "Explenation": "Both organizational process assets and environmental factors inform how project practices are customized to organizational context (PMBOK Guide, Sections 2.1.3 and 2.1.4)."
+    },
+    {
+      "qid": 165,
+      "difficulty": "very hard",
+      "QuestionText": "A project manager is handling multiple vendors in a complex contract environment. What actions should be taken to manage integration and risks effectively?",
+      "Choices": [
+        { "id": 1, "choicetext": "Establish clear contract interfaces, communication protocols, and monitor inter-vendor dependencies closely", "iscorrect": true },
+        { "id": 2, "choicetext": "Delegate all vendor management to individual suppliers without integration", "iscorrect": false },
+        { "id": 3, "choicetext": "Ignore interdependencies to reduce management overhead", "iscorrect": false },
+        { "id": 4, "choicetext": "Consolidate all contracts into one vague master contract", "iscorrect": false }
+      ],
+      "Explenation": "Proper integration management and close monitoring help minimize risks inherent in multi-vendor procurements (PMBOK Guide, Section 12.3)."
+    },
+    {
+      "qid": 166,
+      "difficulty": "very hard",
+      "QuestionText": "How can a project manager manage power dynamics and conflicting stakeholder interests during change control to maintain project governance?",
+      "Choices": [
+        { "id": 1, "choicetext": "By fostering transparent, inclusive change control processes and continuous stakeholder engagement", "iscorrect": true },
+        { "id": 2, "choicetext": "By bypassing formal controls to expedite decisions", "iscorrect": false },
+        { "id": 3, "choicetext": "By ignoring dissenting stakeholders", "iscorrect": false },
+        { "id": 4, "choicetext": "By deferring all changes until project end", "iscorrect": false }
+      ],
+      "Explenation": "Transparent change processes and engagement ensure legitimacy and balance stakeholder interests (PMBOK Guide, Sections 4.6 and 13)."
+    },
+    {
+      "qid": 167,
+      "difficulty": "very hard",
+      "QuestionText": "What are the unique challenges of updating organizational process assets (OPA) in an agile, rapidly changing project environment?",
+      "Choices": [
+        { "id": 1, "choicetext": "Balancing frequent updates with maintaining process stability; leveraging automation aids timely knowledge capture", "iscorrect": true },
+        { "id": 2, "choicetext": "Avoiding all formal documentation to maintain agility", "iscorrect": false },
+        { "id": 3, "choicetext": "Delaying updates until project closure", "iscorrect": false },
+        { "id": 4, "choicetext": "Involving only senior management in updates", "iscorrect": false }
+      ],
+      "Explenation": "Frequent updating of OPAs supports continuous improvement but must be structured to not hinder agility (PMBOK Guide, Agile Practice Guide)."
+    },
+    {
+      "qid": 168,
+      "difficulty": "very hard",
+      "QuestionText": "How can lessons learned registers be effectively integrated into knowledge management processes to improve project and organizational performance?",
+      "Choices": [
+        { "id": 1, "choicetext": "By systematically capturing experiences and disseminating best practices to future projects and stakeholders", "iscorrect": true },
+        { "id": 2, "choicetext": "By archiving them without analysis", "iscorrect": false },
+        { "id": 3, "choicetext": "By restricting access to project managers only", "iscorrect": false },
+        { "id": 4, "choicetext": "By documenting only successes, ignoring failures", "iscorrect": false }
+      ],
+      "Explenation": "Well-integrated lessons learned enhance organizational knowledge by preventing repeat mistakes and promoting improvements (PMBOK Guide, Section 4.4)."
+    },
+    {
+      "qid": 169,
+      "difficulty": "very hard",
+      "QuestionText": "What is the rationale and effect of using a 'project buffer' in buffer management within Critical Chain scheduling?",
+      "Choices": [
+        { "id": 1, "choicetext": "It protects the project completion date against uncertainties on the critical chain by absorbing delays", "iscorrect": true },
+        { "id": 2, "choicetext": "It represents the total float allocated to all activities", "iscorrect": false },
+        { "id": 3, "choicetext": "It eliminates the critical path", "iscorrect": false },
+        { "id": 4, "choicetext": "It decreases overall project quality", "iscorrect": false }
+      ],
+      "Explenation": "The project buffer is extra time added at the end of the critical chain to safeguard against overruns (PMBOK Guide, Section 6.6)."
+    },
+    {
+      "qid": 170,
+      "difficulty": "very hard",
+      "QuestionText": "Describe how earned value management metrics can be used to forecast project completion dates and costs under different performance conditions.",
+      "Choices": [
+        { "id": 1, "choicetext": "Using CPI and SPI, EVM forecasts estimate at completion and schedule forecasts predicting cost and time to complete the project", "iscorrect": true },
+        { "id": 2, "choicetext": "Metrics only describe past performance and cannot predict future outcomes", "iscorrect": false },
+        { "id": 3, "choicetext": "EVM disregards schedule performance in forecasting", "iscorrect": false },
+        { "id": 4, "choicetext": "Forecasts rely solely on planned values", "iscorrect": false }
+      ],
+      "Explenation": "EVM employs performance indices to predict final costs and completion dates, enabling proactive project management (PMBOK Guide, Section 7.4)."
+    },
+    {
+      "qid": 171,
+      "difficulty": "very hard",
+      "QuestionText": "How does a project manager effectively handle conflicting priorities among key stakeholders during requirement elicitation to ensure project success?",
+      "Choices": [
+        { "id": 1, "choicetext": "Facilitate negotiation and consensus-building workshops and document agreed-upon requirements with change control procedures", "iscorrect": true },
+        { "id": 2, "choicetext": "Prioritize the highest-paying stakeholder's requirements unilaterally", "iscorrect": false },
+        { "id": 3, "choicetext": "Ignore conflicts and proceed with the initial plan", "iscorrect": false },
+        { "id": 4, "choicetext": "Defer requirement resolution until implementation", "iscorrect": false }
+      ],
+      "Explenation": "Resolving conflicting stakeholder needs early via facilitated discussions mitigates risk and aligns expectations (PMBOK Guide, Section 5.2)."
+    },
+    {
+      "qid": 172,
+      "difficulty": "very hard",
+      "QuestionText": "When conducting procurement negotiations for a highly complex deliverable, what advanced strategies can reduce ambiguity and contractual disputes?",
+      "Choices": [
+        { "id": 1, "choicetext": "Clear scope definition, inclusion of acceptance criteria, detailed terms, and formal change-control clauses", "iscorrect": true },
+        { "id": 2, "choicetext": "Relying on verbal agreements only", "iscorrect": false },
+        { "id": 3, "choicetext": "Using general performance descriptions", "iscorrect": false },
+        { "id": 4, "choicetext": "Omitting schedule requirements for flexibility", "iscorrect": false }
+      ],
+      "Explenation": "Precise and comprehensive contracts reduce risks of misinterpretation and disputes (PMBOK Guide, Section 12.2)."
+    },
+    {
+      "qid": 173,
+      "difficulty": "very hard",
+      "QuestionText": "What are the effects of organizational culture and structure, as enterprise environmental factors, on stakeholder engagement and project execution?",
+      "Choices": [
+        { "id": 1, "choicetext": "They influence communication styles, authority, decision making, and stakeholder expectations requiring tailored engagement strategies", "iscorrect": true },
+        { "id": 2, "choicetext": "They have no impact on stakeholder engagement", "iscorrect": false },
+        { "id": 3, "choicetext": "They only affect technical aspects of the project", "iscorrect": false },
+        { "id": 4, "choicetext": "They standardize processes making engagement uniform", "iscorrect": false }
+      ],
+      "Explenation": "Cultural norms, hierarchy, and business environments affect stakeholder interactions and require adapting engagement accordingly (PMBOK Guide, Section 2.1.3)."
+    },
+    {
+      "qid": 174,
+      "difficulty": "very hard",
+      "QuestionText": "Explain how an effective configuration management system supports complex project environments and helps maintain quality and scope integrity.",
+      "Choices": [
+        { "id": 1, "choicetext": "By controlling, documenting, and auditing changes to deliverables, it ensures traceability and consistency, reducing errors and scope drift", "iscorrect": true },
+        { "id": 2, "choicetext": "By solely managing project budgets", "iscorrect": false },
+        { "id": 3, "choicetext": "By increasing delivery speed by allowing uncontrolled changes", "iscorrect": false },
+        { "id": 4, "choicetext": "By eliminating communication with stakeholders", "iscorrect": false }
+      ],
+      "Explenation": "Configuration management ensures deliverable versions and changes are controlled and aligned with quality and scope requirements (PMBOK Guide, Section 4.6)."
+    },
+    {
+      "qid": 175,
+      "difficulty": "very hard",
+      "QuestionText": "When managing project knowledge, how can technology tools be leveraged to facilitate lessons learned capture in large, distributed teams?",
+      "Choices": [
+        { "id": 1, "choicetext": "Using collaborative platforms and knowledge repositories for real-time capture and sharing across locations", "iscorrect": true },
+        { "id": 2, "choicetext": "Relying on end-of-project face-to-face meetings only", "iscorrect": false },
+        { "id": 3, "choicetext": "Limiting access to knowledge to only senior managers", "iscorrect": false },
+        { "id": 4, "choicetext": "Using spreadsheets without centralized storage", "iscorrect": false }
+      ],
+      "Explenation": "Collaborative technology ensures effective knowledge management despite team dispersion (PMBOK Guide, Section 4.4)."
+    },
+    {
+      "qid": 176,
+      "difficulty": "very hard",
+      "QuestionText": "How does earned value management help in identifying early signs of project cost and schedule variances, and what corrective actions follow?",
+      "Choices": [
+        { "id": 1, "choicetext": "By comparing planned value, earned value and actual cost, early variances are detected enabling timely corrective measures like resource reallocation or scope adjustment", "iscorrect": true },
+        { "id": 2, "choicetext": "By providing subjective assessments of progress", "iscorrect": false },
+        { "id": 3, "choicetext": "By focusing only on final project outcomes", "iscorrect": false },
+        { "id": 4, "choicetext": "By ignoring schedule impacts", "iscorrect": false }
+      ],
+      "Explenation": "EVM metrics provide objective insights for early corrective actions to improve cost and schedule performance (PMBOK Guide, Section 7.4)."
+    },
+    {
+      "qid": 177,
+      "difficulty": "very hard",
+      "QuestionText": "In what way does tailoring project management processes improve the likelihood of project success, and what risks might arise if tailoring is not done correctly?",
+      "Choices": [
+        { "id": 1, "choicetext": "Tailoring adapts processes to project size, complexity, and risk improving fit and efficiency; poor tailoring can cause misalignment and inefficiencies", "iscorrect": true },
+        { "id": 2, "choicetext": "Tailoring eliminates all project risks", "iscorrect": false },
+        { "id": 3, "choicetext": "Tailoring disregards organizational standards", "iscorrect": false },
+        { "id": 4, "choicetext": "Tailoring delays project execution indefinitely", "iscorrect": false }
+      ],
+      "Explenation": "Appropriate tailoring optimizes project processes and reduces waste; improper tailoring leads to gaps in management controls (PMBOK Guide, Introduction)."
+    },
+    {
+      "qid": 178,
+      "difficulty": "very hard",
+      "QuestionText": "How can the management of stakeholder engagement mitigate risks associated with unclear requirements and shifting expectations in complex projects?",
+      "Choices": [
+        { "id": 1, "choicetext": "Through early and continuous engagement, transparent communication, and aligning expectations with realistic capabilities", "iscorrect": true },
+        { "id": 2, "choicetext": "By limiting stakeholder interaction to formal reports only", "iscorrect": false },
+        { "id": 3, "choicetext": "By avoiding communication until requirements are finalized", "iscorrect": false },
+        { "id": 4, "choicetext": "By escalating all stakeholder issues without resolution", "iscorrect": false }
+      ],
+      "Explenation": "Effective stakeholder engagement reduces misunderstandings and manages expectations proactively, thus mitigating risks (PMBOK Guide, Section 13.3)."
+    },
+    {
+      "qid": 179,
+      "difficulty": "very hard",
+      "QuestionText": "What are the essential considerations and risks when executing a multi-source procurement strategy in high-stakes projects?",
+      "Choices": [
+        { "id": 1, "choicetext": "Managing integration risks, interface control, supplier performance, and consistent contract terms", "iscorrect": true },
+        { "id": 2, "choicetext": "Ignoring vendor interfaces to simplify management", "iscorrect": false },
+        { "id": 3, "choicetext": "Selecting cheapest vendors to reduce costs regardless of capability", "iscorrect": false },
+        { "id": 4, "choicetext": "Consolidate all procurement through a single vendor only", "iscorrect": false }
+      ],
+      "Explenation": "Multi-source strategies require rigorous coordination and risk monitoring to ensure effective delivery (PMBOK Guide, Section 12.3)."
+    },
+    {
+      "qid": 180,
+      "difficulty": "very hard",
+      "QuestionText": "Explain how integration of lessons learned into organizational process assets can affect project performance positively and negatively if applied improperly.",
+      "Choices": [
+        { "id": 1, "choicetext": "Proper integration drives continuous improvement and knowledge sharing; improper application can lead to outdated or irrelevant practices hampering innovation", "iscorrect": true },
+        { "id": 2, "choicetext": "Lessons learned have no effect on future projects", "iscorrect": false },
+        { "id": 3, "choicetext": "Too much documentation always improves project outcomes", "iscorrect": false },
+        { "id": 4, "choicetext": "They replace the need for formal project plans", "iscorrect": false }
+      ],
+      "Explenation": "Effectively managed lessons learned bolster project outcomes; misapplication can hinder adaptability and innovation (PMBOK Guide, Section 4.4)."
     }
   ]
 }
