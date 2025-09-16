@@ -95,4 +95,48 @@ label {
   section {
     padding: 1rem 0.5rem;
   }
+  h1, h2 {
+    font-size: 1.2rem;
+  }
+  .choice-btn {
+    font-size: 1rem;
+    padding: 1rem 0.5rem;
+  }
+  button, input[type="number"] {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .progress-bar {
+    height: 12px;
+  }
+}
+
+/* Extra polish for clarity and touch targets */
+.choice-btn {
+  margin-bottom: 0.5rem;
+  min-height: 48px;
+  font-size: 1.1rem;
+}
+#skip-btn {
+  width: 100%;
+  background: #f9a825;
+  color: #222;
+  border: none;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+#skip-btn:hover {
+  background: #fbc02d;
+}
+#restart-btn {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 1rem;
+}
+.question-text {
+  font-size: 1.1rem;
+  margin: 1rem 0 0.5rem 0;
+  font-weight: 500;
 }
