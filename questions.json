@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "qid": 1,
+      "difficulty": "easy",
+      "QuestionText": "Which document formally authorizes the existence of a project?",
+      "Choices": [
+        { "id": 1, "choicetext": "Project Charter", "iscorrect": true },
+        { "id": 2, "choicetext": "Business Case", "iscorrect": false },
+        { "id": 3, "choicetext": "Project Management Plan", "iscorrect": false },
+        { "id": 4, "choicetext": "Statement of Work", "iscorrect": false }
+      ],
+      "Explenation": "The Project Charter formally authorizes the existence of a project and provides the project manager with the authority to apply organizational resources, as described in PMBOK Guide, Section 4.1."
+    },
+    {
+      "qid": 11,
+      "difficulty": "normal",
+      "QuestionText": "What is the main purpose of stakeholder engagement in a project?",
+      "Choices": [
+        { "id": 1, "choicetext": "To ensure stakeholders are satisfied and project objectives are met", "iscorrect": true },
+        { "id": 2, "choicetext": "To reduce project risks only", "iscorrect": false },
+        { "id": 3, "choicetext": "To define resources needed", "iscorrect": false },
+        { "id": 4, "choicetext": "To create the project charter", "iscorrect": false }
+      ],
+      "Explenation": "The main purpose of stakeholder engagement is to ensure stakeholders are appropriately involved, their needs and expectations understood, conflicts managed, and project goals achieved (PMBOK Guide, Section 13.1)."
+    }
+  ]
+}
