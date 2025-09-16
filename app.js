@@ -9,8 +9,9 @@ let quizState = {
   answers: [],
 };
 
-// Wait for DOM to be ready
-document.addEventListener('DOMContentLoaded', function() {
+function initializeApp() {
+  // Always render the setup UI first so the page isn't blank
+  try { renderSetup(); } catch (_) {}
   // Load questions.json
   if (location.protocol === 'file:') {
     // When opened directly from the filesystem, avoid fetch to prevent CORS errors
@@ -27,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
       .then(res => res.json())
       .then(data => {
         questions = data.questions;
-        renderSetup();
+        // If setup already rendered, nothing else to do until Start
       })
       .catch(() => {
         const setupSection = document.getElementById('setup-section');
@@ -39,7 +40,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
   }
-});
+}
+
+// Wait for DOM to be ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initializeApp);
+} else {
+  // DOM is already loaded
+  initializeApp();
+}
 
 function renderSetup() {
   document.getElementById('setup-section').style.display = '';
