@@ -9,34 +9,37 @@ let quizState = {
   answers: [],
 };
 
-// Load questions.json
-if (location.protocol === 'file:') {
-  // When opened directly from the filesystem, avoid fetch to prevent CORS errors
-  const setupSection = document.getElementById('setup-section');
-  if (setupSection) {
-    const errorDiv = document.createElement('div');
-    errorDiv.className = 'error';
-    errorDiv.innerHTML = 'This page is opened directly from your computer. For the quiz to load questions, please run a local server (e.g., py -m http.server) or deploy to GitHub Pages.';
-    setupSection.appendChild(errorDiv);
+// Wait for DOM to be ready
+document.addEventListener('DOMContentLoaded', function() {
+  // Load questions.json
+  if (location.protocol === 'file:') {
+    // When opened directly from the filesystem, avoid fetch to prevent CORS errors
+    const setupSection = document.getElementById('setup-section');
+    if (setupSection) {
+      const errorDiv = document.createElement('div');
+      errorDiv.className = 'error';
+      errorDiv.innerHTML = 'This page is opened directly from your computer. For the quiz to load questions, please run a local server (e.g., py -m http.server) or deploy to GitHub Pages.';
+      setupSection.appendChild(errorDiv);
+    }
+    // Do not attempt fetch under file:// to keep console clean
+  } else {
+    fetch('questions.json')
+      .then(res => res.json())
+      .then(data => {
+        questions = data.questions;
+        renderSetup();
+      })
+      .catch(() => {
+        const setupSection = document.getElementById('setup-section');
+        if (setupSection) {
+          const errorDiv = document.createElement('div');
+          errorDiv.className = 'error';
+          errorDiv.innerHTML = 'Failed to load questions. Please refresh the page.';
+          setupSection.appendChild(errorDiv);
+        }
+      });
   }
-  // Do not attempt fetch under file:// to keep console clean
-} else {
-  fetch('questions.json')
-    .then(res => res.json())
-    .then(data => {
-      questions = data.questions;
-      renderSetup();
-    })
-    .catch(() => {
-      const setupSection = document.getElementById('setup-section');
-      if (setupSection) {
-        const errorDiv = document.createElement('div');
-        errorDiv.className = 'error';
-        errorDiv.innerHTML = 'Failed to load questions. Please refresh the page.';
-        setupSection.appendChild(errorDiv);
-      }
-    });
-}
+});
 
 function renderSetup() {
   document.getElementById('setup-section').style.display = '';
