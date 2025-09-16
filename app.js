@@ -98,8 +98,23 @@ function renderSetup() {
 }
 
 function startQuiz() {
-  // TODO: Generate quizQuestions based on user selection
-  // TODO: Shuffle and pick unique questions
+  // Generate quizQuestions based on user selection
+  let selected = [];
+  quizState.selectedDifficulties.forEach(diff => {
+    const pool = questions.filter(q => q.difficulty === diff);
+    // Shuffle pool
+    for (let i = pool.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [pool[i], pool[j]] = [pool[j], pool[i]];
+    }
+    selected = selected.concat(pool.slice(0, quizState.numQuestions[diff]));
+  });
+  // Shuffle all selected questions
+  for (let i = selected.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [selected[i], selected[j]] = [selected[j], selected[i]];
+  }
+  quizState.quizQuestions = selected;
   quizState.current = 0;
   quizState.correct = 0;
   quizState.answers = [];
@@ -107,18 +122,81 @@ function startQuiz() {
 }
 
 function renderQuiz() {
+  const quizSection = document.getElementById('quiz-section');
+  quizSection.innerHTML = '';
   document.getElementById('setup-section').style.display = 'none';
-  document.getElementById('quiz-section').style.display = '';
+  quizSection.style.display = '';
   document.getElementById('results-section').style.display = 'none';
-  // TODO: Render current question, choices, skip, and progress
+
+  const q = quizState.quizQuestions[quizState.current];
+  if (!q) {
+    showResults();
+    return;
+  }
+  // Progress bar
+  const progress = ((quizState.current) / quizState.quizQuestions.length) * 100;
+  quizSection.innerHTML += `
+    <div class="progress-bar"><div class="progress" style="width:${progress}%;"></div></div>
+    <h2>Question ${quizState.current + 1} of ${quizState.quizQuestions.length}</h2>
+    <div class="question-text">${q.QuestionText}</div>
+    <div class="choices"></div>
+    <button id="skip-btn" style="margin-top:1rem;">Skip</button>
+    <div id="explanation-box"></div>
+  `;
+  // Render choices
+  const choicesDiv = quizSection.querySelector('.choices');
+  q.Choices.forEach(choice => {
+    const btn = document.createElement('button');
+    btn.className = 'choice-btn';
+    btn.textContent = choice.choicetext;
+    btn.onclick = () => answerQuestion(choice.id);
+    choicesDiv.appendChild(btn);
+  });
+  // Skip button
+  document.getElementById('skip-btn').onclick = skipQuestion;
 }
 
 function answerQuestion(choiceId) {
-  // TODO: Handle answer, reveal correct, show explanation
+  const q = quizState.quizQuestions[quizState.current];
+  const userChoice = q.Choices.find(c => c.id === choiceId);
+  const correctChoice = q.Choices.find(c => c.iscorrect);
+  const choicesBtns = document.querySelectorAll('.choice-btn');
+  // Disable all buttons
+  choicesBtns.forEach(btn => btn.disabled = true);
+  // Mark selected and correct/incorrect
+  choicesBtns.forEach(btn => {
+    if (btn.textContent === userChoice.choicetext) {
+      btn.classList.add(userChoice.iscorrect ? 'correct' : 'incorrect', 'selected');
+    }
+    if (btn.textContent === correctChoice.choicetext && !userChoice.iscorrect) {
+      btn.classList.add('correct');
+    }
+  });
+  // Show explanation
+  document.getElementById('explanation-box').innerHTML = `<div class="explanation"><strong>Explanation:</strong> ${q.Explenation}</div>`;
+  // Track answer
+  quizState.answers.push({
+    qid: q.qid,
+    selected: choiceId,
+    correct: userChoice.iscorrect
+  });
+  if (userChoice.iscorrect) quizState.correct++;
+  // Next question after short delay
+  setTimeout(() => {
+    quizState.current++;
+    renderQuiz();
+  }, 1200);
 }
 
 function skipQuestion() {
-  // TODO: Move to next question
+  const q = quizState.quizQuestions[quizState.current];
+  quizState.answers.push({
+    qid: q.qid,
+    selected: null,
+    correct: false
+  });
+  quizState.current++;
+  renderQuiz();
 }
 
 function showResults() {
