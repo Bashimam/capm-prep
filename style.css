@@ -49,6 +49,8 @@ input[type="checkbox"] {
 input[type="number"] {
   margin-left: 1.5rem;
   margin-bottom: 0.5rem;
+  width: 200px;
+  max-width: 100%;
 }
 .choices {
   display: flex;
@@ -147,6 +149,11 @@ input[type="number"] {
 }
 #skip-btn:hover {
   background: #fbc02d;
+}
+#continue-btn,
+.continue-btn {
+  width: 100%;
+  margin-top: 0.75rem;
 }
 #restart-btn {
   width: 100%;

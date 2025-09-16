@@ -69,7 +69,7 @@ function renderSetup() {
         <input type="checkbox" name="difficulty" value="${diff.key}" id="diff-${diff.key}">
         ${diff.label}
       </label>
-      <input type="number" name="num-${diff.key}" id="num-${diff.key}" min="1" max="100" placeholder="Number (1-100)" style="width:120px; margin-bottom:10px;" disabled>
+      <input type="number" name="num-${diff.key}" id="num-${diff.key}" min="1" max="100" placeholder="Number (1-100)" disabled>
     `;
   });
   formHtml += '<button type="submit">Generate Quiz</button>';
@@ -192,8 +192,11 @@ function answerQuestion(choiceId) {
       btn.classList.add('correct');
     }
   });
-  // Show explanation
-  document.getElementById('explanation-box').innerHTML = `<div class="explanation"><strong>Explanation:</strong> ${q.Explenation}</div>`;
+  // Show explanation with Continue button; stop auto-advance
+  document.getElementById('explanation-box').innerHTML = `
+    <div class="explanation"><strong>Explanation:</strong> ${q.Explenation}</div>
+    <button id="continue-btn" class="continue-btn">Continue</button>
+  `;
   // Track answer
   quizState.answers.push({
     qid: q.qid,
@@ -201,11 +204,14 @@ function answerQuestion(choiceId) {
     correct: userChoice.iscorrect
   });
   if (userChoice.iscorrect) quizState.correct++;
-  // Next question after short delay
-  setTimeout(() => {
-    quizState.current++;
-    renderQuiz();
-  }, 1200);
+  // Advance only when user clicks Continue
+  const continueBtn = document.getElementById('continue-btn');
+  if (continueBtn) {
+    continueBtn.onclick = () => {
+      quizState.current++;
+      renderQuiz();
+    };
+  }
 }
 
 function skipQuestion() {
