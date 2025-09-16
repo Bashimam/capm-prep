@@ -9,9 +9,53 @@ let quizState = {
   answers: [],
 };
 
+// Ensure required DOM nodes exist (helps on environments where HTML didn't load fully yet)
+function ensureDomStructure() {
+  let main = document.querySelector('main');
+  if (!main) {
+    main = document.createElement('main');
+    document.body.appendChild(main);
+  }
+  let setup = document.getElementById('setup-section');
+  if (!setup) {
+    setup = document.createElement('section');
+    setup.id = 'setup-section';
+    setup.innerHTML = `
+      <h1>CAMP Practice Quiz</h1>
+      <div id="how-it-works"></div>
+      <div id="about-camp"></div>
+      <form id="quiz-setup-form"></form>
+    `;
+    main.appendChild(setup);
+  }
+  if (!document.getElementById('quiz-section')) {
+    const quiz = document.createElement('section');
+    quiz.id = 'quiz-section';
+    quiz.style.display = 'none';
+    main.appendChild(quiz);
+  }
+  if (!document.getElementById('results-section')) {
+    const results = document.createElement('section');
+    results.id = 'results-section';
+    results.style.display = 'none';
+    main.appendChild(results);
+  }
+}
+
 function initializeApp() {
   // Always render the setup UI first so the page isn't blank
-  try { renderSetup(); } catch (_) {}
+  console.log('[capm-prep] initializeApp start');
+  try {
+    ensureDomStructure();
+    renderSetup();
+    console.log('[capm-prep] renderSetup() done');
+  } catch (err) {
+    console.error('[capm-prep] renderSetup failed', err);
+    const setupSection = document.getElementById('setup-section');
+    if (setupSection) {
+      setupSection.innerHTML += '<p style="margin-top:1rem;">Unable to render setup UI. Please refresh.</p>';
+    }
+  }
   // Load questions.json
   if (location.protocol === 'file:') {
     // When opened directly from the filesystem, avoid fetch to prevent CORS errors
@@ -29,8 +73,10 @@ function initializeApp() {
       .then(data => {
         questions = data.questions;
         // If setup already rendered, nothing else to do until Start
+        console.log('[capm-prep] questions loaded:', Array.isArray(questions) ? questions.length : 'n/a');
       })
       .catch(() => {
+        console.error('[capm-prep] failed to load questions.json');
         const setupSection = document.getElementById('setup-section');
         if (setupSection) {
           const errorDiv = document.createElement('div');
