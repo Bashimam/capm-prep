@@ -200,12 +200,31 @@ function skipQuestion() {
 }
 
 function showResults() {
+  const resultsSection = document.getElementById('results-section');
+  resultsSection.innerHTML = '';
   document.getElementById('setup-section').style.display = 'none';
   document.getElementById('quiz-section').style.display = 'none';
-  document.getElementById('results-section').style.display = '';
-  // TODO: Show score and restart option
+  resultsSection.style.display = '';
+
+  const total = quizState.quizQuestions.length;
+  const correct = quizState.correct;
+  resultsSection.innerHTML = `
+    <h2>Quiz Complete!</h2>
+    <p>Your Score: <strong>${correct} / ${total}</strong></p>
+    <div style="margin:1.5rem 0;">
+      <button id="restart-btn">Restart</button>
+    </div>
+  `;
+  document.getElementById('restart-btn').onclick = restartQuiz;
 }
 
 function restartQuiz() {
+  // Reset state
+  quizState.selectedDifficulties = [];
+  quizState.numQuestions = {};
+  quizState.quizQuestions = [];
+  quizState.current = 0;
+  quizState.correct = 0;
+  quizState.answers = [];
   renderSetup();
 }
