@@ -263,8 +263,11 @@ function answerQuestion(choiceId) {
       btn.classList.add('correct');
     }
   });
-  // Show explanation with Continue button; stop auto-advance
+  // Show result and explanation with Continue button; stop auto-advance
+  const resultText = userChoice.iscorrect ? 'Correct!' : 'Incorrect';
+  const resultClass = userChoice.iscorrect ? 'result-correct' : 'result-incorrect';
   document.getElementById('explanation-box').innerHTML = `
+    <div class="result ${resultClass}">${resultText}</div>
     <div class="explanation"><strong>Explanation:</strong> ${q.Explenation}</div>
     <button id="continue-btn" class="continue-btn">Continue</button>
   `;
