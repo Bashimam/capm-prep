@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "qid": 1,
+      "difficulty": "easy",
+      "QuestionText": "Which document formally authorizes the existence of a project?",
+      "Choices": [
+        { "id": 1, "choicetext": "Project Charter", "iscorrect": true },
+        { "id": 2, "choicetext": "Business Case", "iscorrect": false },
+        { "id": 3, "choicetext": "Project Management Plan", "iscorrect": false },
+        { "id": 4, "choicetext": "Statement of Work", "iscorrect": false }
+      ],
+      "Explenation": "The Project Charter formally authorizes the existence of a project and provides the project manager with authority."
+    },
+    {
+      "qid": 2,
+      "difficulty": "easy",
+      "QuestionText": "Who is responsible for managing the project to meet its objectives?",
+      "Choices": [
+        { "id": 1, "choicetext": "Project Manager", "iscorrect": true },
+        { "id": 2, "choicetext": "Project Sponsor", "iscorrect": false },
+        { "id": 3, "choicetext": "Functional Manager", "iscorrect": false },
+        { "id": 4, "choicetext": "Stakeholder", "iscorrect": false }
+      ],
+      "Explenation": "The Project Manager is responsible for meeting the project objectives."
+    },
+    {
+      "qid": 3,
+      "difficulty": "easy",
+      "QuestionText": "Which of the following is NOT a process group in project management?",
+      "Choices": [
+        { "id": 1, "choicetext": "Initiating", "iscorrect": false },
+        { "id": 2, "choicetext": "Planning", "iscorrect": false },
+        { "id": 3, "choicetext": "Optimizing", "iscorrect": true },
+        { "id": 4, "choicetext": "Closing", "iscorrect": false }
+      ],
+      "Explenation": "The five process groups are Initiating, Planning, Executing, Monitoring and Controlling, and Closing. 'Optimizing' is not a standard process group."
+    },
+    {
+      "qid": 4,
+      "difficulty": "easy",
+      "QuestionText": "What is a deliverable in project management terminology?",
+      "Choices": [
+        { "id": 1, "choicetext": "A unique and verifiable product, result, or capability", "iscorrect": true },
+        { "id": 2, "choicetext": "A meeting summary", "iscorrect": false },
+        { "id": 3, "choicetext": "A list of risks", "iscorrect": false },
+        { "id": 4, "choicetext": "A budget estimate", "iscorrect": false }
+      ],
+      "Explenation": "A deliverable is any unique and verifiable product, result, or capability to perform a service."
+    },
+    {
+      "qid": 5,
+      "difficulty": "easy",
+      "QuestionText": "What describes the total sum of all work to be completed in a project?",
+      "Choices": [
+        { "id": 1, "choicetext": "Project Scope", "iscorrect": true },
+        { "id": 2, "choicetext": "Project Schedule", "iscorrect": false },
+        { "id": 3, "choicetext": "Project Charter", "iscorrect": false },
+        { "id": 4, "choicetext": "Quality Management Plan", "iscorrect": false }
+      ],
+      "Explenation": "Project scope describes all the work that must be done to deliver the project successfully."
+    }
+  ]
+}
