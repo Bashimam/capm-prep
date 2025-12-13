@@ -133,10 +133,10 @@ function renderSetup() {
   difficulties.forEach(diff => {
     formHtml += `
       <label>
-        <input type="checkbox" name="difficulty" value="${diff.key}" id="diff-${diff.key}">
+        <input type="checkbox" name="difficulty" value="${diff.key}" id="diff-${diff.key}" checked>
         ${diff.label}
       </label>
-      <input type="number" name="num-${diff.key}" id="num-${diff.key}" min="1" max="100" value="20" placeholder="Number (1-100)" disabled>
+      <input type="number" name="num-${diff.key}" id="num-${diff.key}" min="1" max="100" value="20" placeholder="Number (1-100)">
     `;
   });
   formHtml += '<button type="submit">Generate Quiz</button>';
