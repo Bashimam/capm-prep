@@ -131,12 +131,13 @@ function renderSetup() {
   ];
   let formHtml = '<h2>Select Difficulty and Number of Questions</h2>';
   difficulties.forEach(diff => {
+    const safeKey = diff.key.replace(/\s+/g, '-');
     formHtml += `
       <label>
-        <input type="checkbox" name="difficulty" value="${diff.key}" id="diff-${diff.key}" checked>
+        <input type="checkbox" name="difficulty" value="${diff.key}" id="diff-${safeKey}" checked>
         ${diff.label}
       </label>
-      <input type="number" name="num-${diff.key}" id="num-${diff.key}" min="1" max="100" value="20" placeholder="Number (1-100)">
+      <input type="number" name="num-${diff.key}" id="num-${safeKey}" min="1" max="100" value="20" placeholder="Number (1-100)">
     `;
   });
   formHtml += '<button type="submit">Generate Quiz</button>';
@@ -144,11 +145,14 @@ function renderSetup() {
 
   // Enable/disable number input based on checkbox
   difficulties.forEach(diff => {
-    const cb = document.getElementById(`diff-${diff.key}`);
-    const num = document.getElementById(`num-${diff.key}`);
-    cb.addEventListener('change', () => {
-      num.disabled = !cb.checked;
-    });
+    const safeKey = diff.key.replace(/\s+/g, '-');
+    const cb = document.getElementById(`diff-${safeKey}`);
+    const num = document.getElementById(`num-${safeKey}`);
+    if (cb && num) {
+      cb.addEventListener('change', () => {
+        num.disabled = !cb.checked;
+      });
+    }
   });
 
   // Form submit handler
@@ -158,27 +162,42 @@ function renderSetup() {
     // Gather selected difficulties and question counts
     quizState.selectedDifficulties = [];
     quizState.numQuestions = {};
-    let valid = false;
+
+    let atLeastOneSelected = false;
+    let allSelectedValid = true;
+
     difficulties.forEach(diff => {
-      const cb = document.getElementById(`diff-${diff.key}`);
-      const num = document.getElementById(`num-${diff.key}`);
-      if (cb.checked) {
+      // Handle IDs with spaces by replacing with hyphens for DOM selection
+      const safeKey = diff.key.replace(/\s+/g, '-');
+      const cb = document.getElementById(`diff-${safeKey}`);
+      const num = document.getElementById(`num-${safeKey}`);
+
+      if (cb && cb.checked) {
+        atLeastOneSelected = true;
         const n = parseInt(num.value, 10);
         if (!isNaN(n) && n > 0 && n <= 100) {
           quizState.selectedDifficulties.push(diff.key);
           quizState.numQuestions[diff.key] = n;
-          valid = true;
+          // Clear any previous error style
+          num.style.borderColor = '';
         } else {
           num.focus();
           num.style.borderColor = 'red';
-          valid = false;
+          allSelectedValid = false;
         }
       }
     });
-    if (!valid || quizState.selectedDifficulties.length === 0) {
-      alert('Please select at least one difficulty and enter a valid number of questions (1-100) for each.');
+
+    if (!atLeastOneSelected) {
+      alert('Please select at least one difficulty.');
       return;
     }
+
+    if (!allSelectedValid) {
+      alert('Please enter a valid number of questions (1-100) for all selected difficulties.');
+      return;
+    }
+
     startQuiz();
   };
 }
