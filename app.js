@@ -136,7 +136,7 @@ function renderSetup() {
         <input type="checkbox" name="difficulty" value="${diff.key}" id="diff-${diff.key}">
         ${diff.label}
       </label>
-      <input type="number" name="num-${diff.key}" id="num-${diff.key}" min="1" max="100" placeholder="Number (1-100)" disabled>
+      <input type="number" name="num-${diff.key}" id="num-${diff.key}" min="1" max="100" value="20" placeholder="Number (1-100)" disabled>
     `;
   });
   formHtml += '<button type="submit">Generate Quiz</button>';
@@ -148,13 +148,12 @@ function renderSetup() {
     const num = document.getElementById(`num-${diff.key}`);
     cb.addEventListener('change', () => {
       num.disabled = !cb.checked;
-      if (!cb.checked) num.value = '';
     });
   });
 
   // Form submit handler
   const form = document.getElementById('quiz-setup-form');
-  form.onsubmit = function(e) {
+  form.onsubmit = function (e) {
     e.preventDefault();
     // Gather selected difficulties and question counts
     quizState.selectedDifficulties = [];
@@ -207,7 +206,13 @@ function startQuiz() {
   quizState.answers = [];
   renderQuiz();
   // Scroll to quiz section after rendering
-  setTimeout(() => scrollToElementById('quiz-section'), 0);
+  // Scroll to quiz section after rendering with a slight delay to ensure layout update
+  setTimeout(() => {
+    const quizSection = document.getElementById('quiz-section');
+    if (quizSection) {
+      quizSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, 100);
 }
 
 function renderQuiz() {
